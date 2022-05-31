@@ -16,7 +16,6 @@ body{
 }
 /***************************************************Header***************************************************************/
 nav {
-    position: absolute;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     width: 100%;
@@ -49,4 +48,19 @@ nav p .M{
     margin-left: -16px;
     margin-top: 20px;
     z-index: -1;
+}
+
+/***************************************************Section 1******************************************************/
+#section_1 img{
+
+}
+.hexal1{
+    margin-top: 20px;
+    /*border-style: solid;
+    border-color: white;
+    width: 100%;*/
+    overflow-x: hidden;
+}
+.hexal1 img{
+
 }
