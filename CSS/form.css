@@ -5,11 +5,48 @@
     margin: 0;
     padding:0;
 
-    font-family: "Inter-Regular";
+    font-family: "Roboto-Regular";
 }
 html{
     scroll-behavior: smooth;
 }
 body{
     min-width: 380px;
+    background-color: rgb(27, 27, 27);
+}
+/***************************************************Header***************************************************************/
+nav {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+}
+nav a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: "Montserrat-Regular";
+    margin: auto;
+}
+nav a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: whitesmoke;
+}
+nav a:hover:nth-child(3){
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+nav p{
+    color: black;
+    margin: auto;
+    font-size: 50px;
+    text-shadow: 1px 1px 5px rgb(123, 102, 255), 1px -1px 5px rgb(123, 102, 255), -1px 1px 5px rgb(123, 102, 255), -1px -1px 5px rgb(123, 102, 255), 1px -1px 5px rgb(123, 102, 255), -1px 1px 5px rgb(123, 102, 255), -1px -1px 5px rgb(123, 102, 255), -1px -1px 5px rgb(123, 102, 255);
+}
+nav p .M{
+    position: absolute;
+    margin-left: -18px;
+    margin-top: 15px;
+    z-index: -1;
 }
