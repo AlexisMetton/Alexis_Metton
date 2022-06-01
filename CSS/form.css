@@ -80,9 +80,53 @@ nav img{
     text-align: center;
     color: rgb(123, 102, 255);
 }
-
-
-/***************************media queries***************************/
+/************************************Section 2***********************************/
+#section_2 .portrait{
+    text-align: center;
+}
+#section_2 h1{
+    text-align: center;
+}
+#section_2 .nom{
+    width: 100%;
+    border-style: solid;
+    border-color: whitesmoke;
+    color: whitesmoke;
+    border-left: none;
+    border-right: none;
+    margin-top: 10px;
+    font-size: 40px;
+}
+#section_2 p{
+    margin-top: 20px;
+    text-align: justify;
+    color: whitesmoke;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#section_2 .CV{
+    margin-top: 10px;
+    text-align: center;
+    color: whitesmoke;
+    border-style: solid;
+    border-color: rgb(123, 102, 255);
+    width: 100px;
+    margin: auto;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#section_2 .CV:hover{
+    background-color: rgb(123, 102, 255);
+    transition: 250ms;
+}
+/***************************Media Queries***************************/
+/**************************Header****************************************/
 @media screen and (max-width:850px){
     nav a {
         display: none;

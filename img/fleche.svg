@@ -3,8 +3,8 @@
 
 <svg
    width="210mm"
-   height="73mm"
-   viewBox="0 0 210 73"
+   height="75mm"
+   viewBox="0 0 210 75"
    version="1.1"
    id="svg5"
    sodipodi:docname="fleche.svg"
@@ -64,15 +64,15 @@
        id="path857-7-3-7" />
     <path
        style="fill:none;stroke:#7b66ff;stroke-width:1.165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 75.496536,34.30413 106.01647,64.82412 136.53641,34.30413"
+       d="M 75.616566,34.556732 106.1365,65.076727 136.65644,34.556732"
        id="path857-0-8" />
     <path
        style="fill:none;stroke:#7b66ff;stroke-width:1.165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 75.469242,37.99565 105.98918,68.51562 136.50915,37.99565"
+       d="M 75.589272,38.777422 106.10921,69.297394 136.62918,38.777422"
        id="path857-7-7-3" />
     <path
        style="fill:none;stroke:#7b66ff;stroke-width:1.165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 75.422877,41.57986 30.519933,30.5199 30.51997,-30.5199"
+       d="m 75.542907,42.361634 30.519933,30.5199 30.51997,-30.5199"
        id="path857-7-3-7-6" />
     <path
        style="fill:none;stroke:#f5f5f5;stroke-width:1.165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -100,15 +100,15 @@
        id="path857-7-3-7-2" />
     <path
        style="fill:none;stroke:#f5f5f5;stroke-width:1.165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 75.542901,32.83667 106.06284,63.35666 136.58277,32.83667"
+       d="M 75.662931,33.089272 106.18287,63.609267 136.7028,33.089272"
        id="path857-0-8-0" />
     <path
        style="fill:none;stroke:#f5f5f5;stroke-width:1.165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 75.515607,36.52819 106.03555,67.04816 136.55551,36.52819"
+       d="M 75.635637,37.309961 106.15558,67.829934 136.67554,37.309961"
        id="path857-7-7-3-4" />
     <path
        style="fill:none;stroke:#f5f5f5;stroke-width:1.165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 75.469242,40.1124 105.98918,70.6323 136.50914,40.1124"
+       d="M 75.589272,40.894173 106.10921,71.414074 136.62917,40.894173"
        id="path857-7-3-7-6-8" />
   </g>
 </svg>
