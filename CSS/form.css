@@ -18,6 +18,10 @@ body{
     display: none;
     }
 /***************************************************Header***************************************************************/
+header{
+    position: sticky;
+    top: 0;
+}
 nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
