@@ -118,12 +118,25 @@ nav img{
     padding-left: 0;
     padding-right: 0;
     border-radius: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
     cursor: pointer;
 }
 #section_2 .CV:hover{
     background-color: rgb(123, 102, 255);
     transition: 250ms;
+}
+#section_2 .logo{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+#section_2 .logo img{
+    padding-top: 10px;
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 /***************************Media Queries***************************/
 /**************************Header****************************************/
