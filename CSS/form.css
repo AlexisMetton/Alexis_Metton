@@ -188,6 +188,13 @@ nav img{
     color: whitesmoke;
     margin-top: 35%;
 }
+#section_3 .infos{
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    color: whitesmoke;
+    text-align: center;
+}
 /***************************Media Queries***************************/
 /**************************Header****************************************/
 @media screen and (max-width:850px){
