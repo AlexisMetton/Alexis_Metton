@@ -60,6 +60,9 @@ header{
     position: sticky;
     top: 0;
 }
+nav img{
+    display: none;
+}
 /***************************************************Section 1******************************************************/
 #section_1{
     margin-top: 40px;
@@ -86,5 +89,12 @@ header{
     }
     nav a:nth-child(3){
         display: flex;
+    }
+    nav img{
+        display: flex;
+        margin: auto;
+        position: absolute;
+        right: 25px;
+        margin-top: 15px;
     }
 }
