@@ -24,11 +24,11 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="2.3233446"
-     inkscape:cx="122.02237"
-     inkscape:cy="90.602145"
-     inkscape:window-width="1600"
-     inkscape:window-height="837"
-     inkscape:window-x="-8"
+     inkscape:cx="122.02236"
+     inkscape:cy="90.602143"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1592"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
@@ -48,11 +48,11 @@
        id="path1129-9" />
     <path
        style="fill:none;stroke:#f5f5f5;stroke-width:2.97425;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 23.646178,20.583601 1.2528124,1.3470473"
+       d="M 23.117011,20.054434 0.72364573,0.81788063"
        id="path1129-2" />
     <path
        style="fill:none;stroke:#f5f5f5;stroke-width:2.97425;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 1.5064801,20.476391 23.656568,1.5623881"
+       d="M 0.97731343,19.947224 23.127401,1.0332214"
        id="path1129-9-0" />
   </g>
 </svg>

@@ -11,7 +11,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    min-width: 380px;
+    min-width: 500px;
     background-color: rgb(27, 27, 27);
 }
 ::-webkit-scrollbar {
@@ -240,7 +240,8 @@ nav img{
     position: relative;
     box-shadow: 0 0 20px rgba(245, 245, 245, 0.548);
     border-radius: 10px;
-    width: 1200px;
+    width: 60%;
+    max-width: 1200px;
     margin: auto;
     transition: box-shadow 1250ms;
 }
@@ -406,7 +407,54 @@ footer h3{
         margin: auto;
         position: absolute;
         right: 25px;
-        margin-top: 15px;
+        margin-top: 25px;
+    }
+}
+/************************Section 5************************************/
+@media screen and (max-width:1200px){
+    #section_5 .img {
+        width: 50%;
+    }
+    #section_5 form {
+        width:60%;
+    }
+}
+@media screen and (max-width:1000px){
+#section_5 article{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#section_5 {
+    text-align: center;
+    margin-top: 100px;
+}
+#section_5 .img {
+    position: relative;
+    background: url(/img/Screenshot_20220531_180703-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    border-radius: 0 10px 10px 0;
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    transition: 500ms 250ms;
+}
+#section_5 article {
+    width: 60%;
+}
+
+#section_5 form {
+    width: 100%;
+}
+}
+@media screen and (max-width:640px){
+    #section_5 article {
+        width: 80%;
+    }
+    
+    #section_5 form {
+        width: 100%;
     }
 }
 /***********************Footer*******************************************/
