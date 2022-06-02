@@ -134,11 +134,11 @@ nav .burger{
     font-size: 40px;
 }
 #section_2 p{
-    margin-top: 20px;
     text-align: justify;
     color: whitesmoke;
-    padding-left: 40px;
-    padding-right: 40px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
 }
 #section_2 .CV{
     margin-top: 10px;
@@ -170,6 +170,8 @@ nav .burger{
     font-size: 30px;
     text-shadow: 1px 0 10px rgb(123, 102, 255);
     margin-top: 100px;
+    width: 80%;
+    margin: auto;
 }
 #section_3 .recadre{
     padding-top:50px;
@@ -245,24 +247,43 @@ nav .burger{
     margin-top: 50px;
     color: whitesmoke;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
+    position: relative;
 }
 #section_3 #cercle1{
     background-color: rgb(123, 102, 255);
     border-style: solid;
     border-color: whitesmoke;
 }
+#section_3 .bac{
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
 #section_3 .iut{
-    display: none;
+    opacity:0;
+    position: absolute;
+    right: 0;
+    left: 0;
 }
 #section_3 .bts{
-    display: none;
+    opacity:0;
+    position: absolute;
+    right: 0;
+    left: 0;
 }
 #section_3 .dcg{
-    display: none;
+    opacity:0;
+    position: absolute;
+    right: 0;
+    left: 0;
 }
 #section_3 .acs{
-    display: none;
+    opacity:0;
+    position: absolute;
+    right: 0;
+    left: 0;
 }
 /**********************************Section 4***************************************/
 #section_4{
