@@ -44,6 +44,14 @@ nav {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     width: 100%;
 }
+.rond{
+    display: block;
+    visibility: hidden;
+    margin: auto;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    transform: translateY(50px);
+}
 nav a{
     color: whitesmoke;
     text-decoration: none;
@@ -51,9 +59,13 @@ nav a{
     margin: auto;
 }
 nav a:hover{
-    text-decoration: underline;
     cursor: pointer;
     color: whitesmoke;
+}
+nav a:hover .rond{
+    visibility: visible;
+    transform: translateY(0px);
+    transition: 250ms;
 }
 nav a:hover:nth-child(3){
     text-decoration: none;
@@ -193,7 +205,7 @@ nav .burger{
     margin-right: 15px;
 }
 #section_3 .logo img:hover{
-    transform: scale(1.05);
+    transform: scale(1.1);
     transition: 250ms;
 }
 #section_3 .travail{
@@ -312,6 +324,10 @@ nav .burger{
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(245, 245, 255, 0.548);
+}
+#section_4 img:hover{
+    transform: scale(1.01);
+    transition: 250ms;
 }
 #section_4 > a img{
     box-shadow: none;
@@ -472,7 +488,7 @@ footer .droit{
     color: black;
 }
 footer img:hover{
-    transform: scale(1.05);
+    transform: scale(1.1);
     transition: 250ms;
 }
 footer h3{
