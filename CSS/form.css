@@ -18,10 +18,6 @@ body{
     display: none;
     }
 /***************************************************Header***************************************************************/
-header{
-    position: sticky;
-    top: 0;
-}
 nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -66,10 +62,10 @@ nav img{
 .nav{
     display: grid;
     position: absolute;
-    top: 10px;
+    top: 0px;
     width: 100%;
     text-align: center;
-    
+    display: none;
 }
 .nav a{
     margin-top: 5px;
@@ -162,6 +158,10 @@ nav img{
     margin-left: 15px;
     margin-right: 15px;
 }
+#section_3 .logo img:hover{
+    transform: scale(1.05);
+    transition: 250ms;
+}
 #section_3 .travail{
     width: 90%;
     text-align: center;
@@ -171,6 +171,10 @@ nav img{
 #section_3 .travail img{
     margin: auto;
     margin-bottom: 5px;
+}
+#section_3 .travail img:hover{
+    transform: translateY(-10px);
+    transition: 250ms;
 }
 #section_3 .travail{
     display: grid;
@@ -190,6 +194,7 @@ nav img{
     margin: auto;
     border-style: solid;
     border-color: rgb(123, 102, 255);
+    cursor: pointer;
 }
 #section_3 .cercle:hover{
     background-color: rgb(123, 102, 255);
@@ -209,6 +214,184 @@ nav img{
     color: whitesmoke;
     text-align: center;
 }
+#section_3 #cercle1{
+    background-color: rgb(123, 102, 255);
+    border-style: solid;
+    border-color: whitesmoke;
+}
+#section_3 .iut{
+    display: none;
+}
+#section_3 .bts{
+    display: none;
+}
+#section_3 .dcg{
+    display: none;
+}
+#section_3 .acs{
+    display: none;
+}
+/*********************************section 5***************************************/
+#section_5 {
+    text-align: center;
+    margin-top: 100px;
+}
+#section_5 article {
+    position: relative;
+    box-shadow: 0 0 20px rgba(245, 245, 245, 0.548);
+    border-radius: 10px;
+    width: 1200px;
+    margin: auto;
+    transition: box-shadow 1250ms;
+}
+
+#section_5 form {
+    align-items: center;
+    width: 50%;
+    padding: 50px;
+    transition: 500ms;
+}
+
+#section_5 form p {
+    text-align: left;
+    width: 100%;
+    padding: 5px;
+}
+
+#section_5 label + input, #section_5 label + textarea {
+    border: solid 1px rgb(123, 102, 255);
+    border-radius: 2px;
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 5px;
+    resize: vertical;
+    transition: background-color 500ms;
+}
+
+::-webkit-resizer {
+    background-image: url(../img/decorations/redimensionneur.svg);
+    background-size: contain;
+}
+
+#section_5 label + input:hover, #section_5 label + input:focus, #section_5 label + textarea:hover, #section_5 label + textarea:focus {
+    background-color: rgb(37, 37, 37);
+}
+
+#section_5 label + input:focus:invalid, #section_5 label + textarea:focus:invalid {
+    background-color: rgb(199, 53, 53);
+}
+
+#section_5 form div {
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+#section_5 form div>* {
+    flex: 1;
+}
+
+#section_5 form>input {
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    width: min-content;
+    padding: 15px 25px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: 125ms;
+    letter-spacing: 2px;
+    color: rgb(123, 102, 255);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(123, 102, 255);
+}
+
+#section_5 form>input:hover, #section_5 form>input:focus {
+    transform: scale(1.1);
+    background-color: rgb(37, 37, 37);
+    transition: 250ms;
+    border-style: solid;
+    border-color: rgb(123, 102, 255);
+}
+
+#section_5 .img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(/img/Screenshot_20220531_180703-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    border-radius: 0 10px 10px 0;
+    width: 50%;
+    height: 100%;
+    transition: 500ms 250ms;
+}
+#section_5 h5{
+    font-size: 20px;
+    color: whitesmoke;
+}
+#section_5 label{
+    color: whitesmoke;
+}
+/***********************************footer*************************************/
+footer{
+    border-top: dashed;
+    margin-top: 100px;
+    color: whitesmoke;
+    text-align: center;
+    background: linear-gradient(rgb(27, 27, 27), rgba(122, 102, 255, 0.411));
+}
+footer .ligne{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+footer p{
+    color: black;
+    margin: auto;
+    font-size: 50px;
+    text-shadow: 1px 1px 5px rgb(123, 102, 255), 1px -1px 5px rgb(123, 102, 255), -1px 1px 5px rgb(123, 102, 255), -1px -1px 5px rgb(123, 102, 255), 1px -1px 5px rgb(123, 102, 255), -1px 1px 5px rgb(123, 102, 255), -1px -1px 5px rgb(123, 102, 255), -1px -1px 5px rgb(123, 102, 255);
+}
+footer #lignefooter a p span:hover .M{
+    z-index: 0;
+}
+footer p .M{
+    position: absolute;
+    margin-left: -16px;
+    margin-top: 23px;
+    z-index: -1;
+}
+footer a{
+    color: black;
+    font-weight: bold;
+}
+footer h1 span{
+    color: rgb(123, 102, 255);
+}
+footer .ligne{
+    margin-top: 20px;
+}
+footer button{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: transparent;
+    border-style: none;
+}
+footer .droit{
+    padding-bottom: 10px; 
+    padding-top: 5px;
+    font-size: 10px;
+    color: black;
+}
+footer img:hover{
+    transform: scale(1.05);
+    transition: 250ms;
+}
+footer h3{
+    color: black;
+    font-weight: bold;
+}
 /***************************Media Queries***************************/
 /**************************Header****************************************/
 @media screen and (max-width:850px){
@@ -224,5 +407,15 @@ nav img{
         position: absolute;
         right: 25px;
         margin-top: 15px;
+    }
+}
+/***********************Footer*******************************************/
+@media screen and (max-width:450px){
+    footer .ligne{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    footer #reseaux{
+        margin-top: 20px;
     }
 }

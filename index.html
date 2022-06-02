@@ -14,9 +14,10 @@
             <a href="#section_2">PROFIL</a>
             <a href="#section_3">COMPETENCES</a>
             <a href=""><p><span class="A">A</span><span class="M">M</span></p></a>
-            <a href="">PROJETS</a>
-            <a href="">CONTACT</a>
-            <img src="img/burger.svg" height="50px">
+            <a href="#section_4">PROJETS</a>
+            <a href="#section_5">CONTACT</a>
+            <img class="burger" src="img/burger.svg" height="50px">
+            <img style="display: none;" class="croix" src="img/croix.svg" height="50px">
         </nav>
         <div class="nav">
             <a href="#section_2">PROFIL</a>
@@ -60,30 +61,30 @@
         </div>
         <div class="travail">
             <div class="comp">
-                <img src="/img/bootstrap.png" height="50px">
+                <img src="/img/web.png" height="50px">
                 <h2>Développement Web</h2><br>
                 <p>Intégration HTML et CSS, front-end javascript, back-end php et mySQL.</p>
             </div>
             <div class="comp">
-                <img src="/img/bootstrap.png" height="50px">
+                <img src="/img/smartphone.png" height="50px">
                 <h2>Expérience Utilisateur</h2><br>
                 <p>Sites et applications responsives, conception d'interfaces ergonomiques.</p>
             </div>
         </div>
         <div class="parcours">
-            <div class="cercle">
+            <div class="cercle" id="cercle1">
                 <h3>2017</h3>
             </div><img src="/img/ligne.jpg" height="3px" width="10px" style="margin-top: 45px;">
-            <div class="cercle">
+            <div class="cercle" id="cercle2">
                 <h3>2018</h3>
             </div><img src="/img/ligne.jpg" height="3px" width="10px" style="margin-top: 45px;">
-            <div class="cercle">
+            <div class="cercle" id="cercle3">
                 <h3>2020</h3>
             </div><img src="/img/ligne.jpg" height="3px" width="10px" style="margin-top: 45px;">
-            <div class="cercle">
+            <div class="cercle" id="cercle4">
                 <h3>2021</h3>
             </div><img src="/img/ligne.jpg" height="3px" width="10px" style="margin-top: 45px;">
-            <div class="cercle">
+            <div class="cercle" id="cercle5">
                 <h3>2022</h3>
             </div>
         </div>
@@ -99,10 +100,47 @@
 
     </section>
     <section id="section_5">
-
+        <article class="ligne">
+            <form method="post" action="traitement.php" class="colonne">
+                <h5>Me Contacter</h5>
+                <div class="ligne">
+                    <p class="colonne">
+                        <label for="nom">Nom :</label>
+                        <input type="text" name="nom" required>
+                    </p>
+                    <p class="colonne">
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" name="prenom" required>
+                    </p>
+                </div>
+                <p class="colonne">
+                    <label for="mail">Adresse mail :</label>
+                    <input type="email" name="mail" required>
+                </p>
+                <p class="colonne">
+                    <label for="demande">Votre demande :</label>
+                    <textarea name="demande" rows="4" required></textarea>
+                </p>
+                <input type="submit" value="Envoyer">
+            </form>
+            <div class="img"></div>
+            </article>
     </section>
     <footer>
-        
+        <div class="ligne">
+            <div id="logofooter">
+                <a href="#"><p><span class="A">A</span><span class="M">M</span></p></a><br><br>
+                <a href="#">Mentions légales - RGPD</a>
+            </div>
+            <div id="reseaux">
+                <h3>Pour en savoir plus...</h3>
+                <div class="ligne1">
+                    <button><img src="img/github.png" alt="Github" height="80px"></button>
+                    <button><img src="img/linkedin.png" alt="Linkedin" height="80px"></button>
+                </div>
+            </div>
+        </div><br><br>
+        <p class="droit">Tous droits réservés @Alexis Metton</p>
     </footer>
 </body>
 </html>
