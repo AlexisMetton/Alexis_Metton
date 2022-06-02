@@ -10,3 +10,8 @@ function menu1(){
     document.getElementById('croix').style.display = "none";    
     document.getElementById('nav').style.display = "none"; 
 }
+
+function bulleiut(){
+    document.getElementById('cercle1').style.backgroundColor = "transparent";
+    document.getElementById('cercle1').style.borderColor = "rgb(123, 102, 255)";
+}

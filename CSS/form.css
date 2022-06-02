@@ -17,6 +17,27 @@ body{
 ::-webkit-scrollbar {
     display: none;
     }
+.fleche{
+    width: 100%;
+    animation-duration: .9s;
+    animation-name: clignoter1;
+    animation-iteration-count: infinite;
+    transition: none;
+}
+.fleche2{
+    width: 100%;
+    animation-duration: .9s;
+    animation-name: clignoter2;
+    animation-iteration-count: infinite;
+    transition: none;
+}
+.fleche3{
+    width: 100%;
+    animation-duration: .9s;
+    animation-name: clignoter3;
+    animation-iteration-count: infinite;
+    transition: none;
+}
 /***************************************************Header***************************************************************/
 nav {
     display: grid;
@@ -53,10 +74,12 @@ nav p .M{
     z-index: -1;
 }
 header{
+    background-color: rgb(27, 27, 27);
     position: sticky;
     top: 0;
+    z-index: 10;
 }
-nav img{
+nav .burger{
     display: none;
 }
 .nav{
@@ -133,24 +156,33 @@ nav img{
     border-radius: 10px;
     margin-top: 20px;
     cursor: pointer;
+    margin-bottom: 50px;
 }
 #section_2 .CV:hover{
     background-color: rgb(123, 102, 255);
     transition: 250ms;
 }
 /*****************************************Section 3*************************************/
+#section_3 .titre{
+    padding-top: 80px;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 1px 0 10px rgb(123, 102, 255);
+    margin-top: 100px;
+}
 #section_3 .recadre{
     padding-top:50px;
 }
 #section_3 .logo{
     width: 80%;
     margin: auto;
-    margin-top: 50px;
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
     border-radius: 10px;
     box-shadow: inset 1px 0 20px rgb(123, 102, 255);
+    margin-top: 50px;
 }
 #section_3 .logo img{
     padding-top: 10px;
@@ -213,6 +245,7 @@ nav img{
     margin-top: 50px;
     color: whitesmoke;
     text-align: center;
+    margin-bottom: 50px;
 }
 #section_3 #cercle1{
     background-color: rgb(123, 102, 255);
@@ -231,7 +264,39 @@ nav img{
 #section_3 .acs{
     display: none;
 }
-/*********************************section 5***************************************/
+/**********************************Section 4***************************************/
+#section_4{
+    padding-top: 80px;
+}
+#section_4 .cadre{
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+#section_4 p{
+    padding-top: 20px;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 1px 0 10px rgb(123, 102, 255);
+}
+#section_4 .projet{
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+#section_4 img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(245, 245, 255, 0.548);
+}
+#section_4 > a img{
+    box-shadow: none;
+}
+
+/*********************************Section 5***************************************/
 #section_5 {
     text-align: center;
     margin-top: 100px;
@@ -393,6 +458,22 @@ footer h3{
     color: black;
     font-weight: bold;
 }
+/*****************************Keyframes*******************************/
+@keyframes clignoter1 {
+    0%   { opacity:1; }
+    40%   {opacity:0; }
+    100% { opacity:0; }
+  }
+@keyframes clignoter2 {
+    0%   { opacity:0; }
+    40%   {opacity:1; }
+    100% { opacity:0; }
+  }
+@keyframes clignoter3 {
+    0%   { opacity:0; }
+    40%   {opacity:0; }
+    100% { opacity:1; }
+  }
 /***************************Media Queries***************************/
 /**************************Header****************************************/
 @media screen and (max-width:850px){
@@ -402,7 +483,14 @@ footer h3{
     nav a:nth-child(3){
         display: flex;
     }
-    nav img{
+    nav .burger{
+        display: flex;
+        margin: auto;
+        position: absolute;
+        right: 25px;
+        margin-top: 25px;
+    }
+    nav .croix{
         display: flex;
         margin: auto;
         position: absolute;
