@@ -110,7 +110,7 @@ nav .burger{
     display: none;
 }
 .nav{
-    display: grid;
+    display: flex;
     position: absolute;
     top: 0px;
     width: 100%;
