@@ -130,36 +130,70 @@ function scrollFunction() {
 }
 
 
-
 function openModal1(){    
-    document.getElementById('projet1infos').style.zIndex = "2";
-    document.getElementById('projet1infos').style.opacity = "1";
-    document.getElementById('projet1infos').style.transition = "500ms";
+    document.getElementById('overlay').style.opacity = "1";
+    document.getElementById('popup1').style.opacity = "1";
+    document.getElementById('overlay').style.zIndex = "102";
+    document.getElementById('popup1').style.zIndex = "110";
+    document.getElementById('overlay').style.transition = "500ms";
+    document.getElementById('popup1').style.transition = "500ms"; 
 }
 function openModal2(){    
-    document.getElementById('projet2infos').style.zIndex = "2";
-    document.getElementById('projet2infos').style.opacity = "1";
-    document.getElementById('projet2infos').style.transition = "500ms";
+    document.getElementById('overlay').style.opacity = "1";
+    document.getElementById('popup2').style.opacity = "1";
+    document.getElementById('overlay').style.zIndex = "102";
+    document.getElementById('popup2').style.zIndex = "110";
+    document.getElementById('overlay').style.transition = "500ms";
+    document.getElementById('popup2').style.transition = "500ms"; 
 }
 function openModal3(){    
-    document.getElementById('projet3infos').style.zIndex = "2";
-    document.getElementById('projet3infos').style.opacity = "1";
-    document.getElementById('projet3infos').style.transition = "500ms";
+    document.getElementById('overlay').style.opacity = "1";
+    document.getElementById('popup3').style.opacity = "1";
+    document.getElementById('overlay').style.zIndex = "102";
+    document.getElementById('popup3').style.zIndex = "110";
+    document.getElementById('overlay').style.transition = "500ms";
+    document.getElementById('popup3').style.transition = "500ms"; 
 }
 
 
 function closeModal1(){
-    document.getElementById('projet1infos').style.zIndex = "0";
-    document.getElementById('projet1infos').style.opacity = "0";
-    document.getElementById('projet1infos').style.transition = "500ms";
+    document.getElementById('overlay').style.opacity = "0";
+    document.getElementById('popup1').style.opacity = "0";
+    document.getElementById('overlay').style.zIndex = "-1";
+    document.getElementById('popup1').style.zIndex = "-2";
+    document.getElementById('overlay').style.transition = "500ms";
+    document.getElementById('popup1').style.transition = "500ms";
 }
 function closeModal2(){
-    document.getElementById('projet2infos').style.zIndex = "0";
-    document.getElementById('projet2infos').style.opacity = "0";
-    document.getElementById('projet2infos').style.transition = "500ms";
+    document.getElementById('overlay').style.opacity = "0";
+    document.getElementById('popup2').style.opacity = "0";
+    document.getElementById('overlay').style.zIndex = "-1";
+    document.getElementById('popup2').style.zIndex = "-2";
+    document.getElementById('overlay').style.transition = "500ms";
+    document.getElementById('popup2').style.transition = "500ms";
 }
 function closeModal3(){
-    document.getElementById('projet3infos').style.zIndex = "0";
-    document.getElementById('projet3infos').style.opacity = "0";
-    document.getElementById('projet3infos').style.transition = "500ms";
+    document.getElementById('overlay').style.opacity = "0";
+    document.getElementById('popup3').style.opacity = "0";
+    document.getElementById('overlay').style.zIndex = "-1";
+    document.getElementById('popup3').style.zIndex = "-2";
+    document.getElementById('overlay').style.transition = "500ms";
+    document.getElementById('popup3').style.transition = "500ms";
+}
+
+function closeAvecOverlay(){
+    document.getElementById('overlay').style.opacity = "0";
+    document.getElementById('popup1').style.opacity = "0";
+    document.getElementById('overlay').style.zIndex = "-1";
+    document.getElementById('popup1').style.zIndex = "-2";
+    document.getElementById('overlay').style.transition = "500ms";
+    document.getElementById('popup1').style.transition = "500ms";
+
+    document.getElementById('popup2').style.opacity = "0";
+    document.getElementById('popup2').style.zIndex = "-2";
+    document.getElementById('popup2').style.transition = "500ms";
+
+    document.getElementById('popup3').style.opacity = "0";
+    document.getElementById('popup3').style.zIndex = "-2";
+    document.getElementById('popup3').style.transition = "500ms";
 }

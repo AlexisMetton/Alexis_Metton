@@ -114,22 +114,10 @@
             <div class="projet" id="projet1" onclick="openModal1()">
                 <img src="img/jadoo.png">
             </div>
-            <div class="projetinfos" id="projet1infos">
-                <img src="img/jadoo.png">
-                <div>
-                    <span onclick="closeModal1()" id="btnClose" class="btnClose">&times;</span>
-                </div>
-            </div>
             <div class="projet" id="projet2" onclick="openModal2()">
                 <img src="img/travelers.png">
             </div>
-            <div class="projetinfos" id="projet2infos">
-                <img src="img/travelers.png">
-            </div>
             <div class="projet" id="projet3" onclick="openModal3()">
-                <img src="img/enlight.png">
-            </div>
-            <div class="projetinfos" id="projet3infos">
                 <img src="img/enlight.png">
             </div>
         </div>
@@ -185,81 +173,18 @@
             <img src="img/scrollTop.svg" height="20px">
         </a>
     </div>
-    <div id="overlay" class="overay" onclick="closeAvecOverlay()"></div>
-    <div id="popup">
-        <span onclick="closeModal()" id="btnClose" class="btnClose" style="position: sticky;top: 10px;right:25px">&times;</span>
-                                                        <button class="flecheDroite" onclick="flecheDroiteProduit()"><img src="img/flecheGauche.png" height="10px"></button>
-                                                        <button class="flecheGauche" onclick="flecheGaucheProduit()"><img src="img/flecheGauche.png" height="10px"></button>
-                                                        <div class="imageRestau1" id="imageRestau1" style="background-size: cover;
-                                                        background-repeat: no-repeat; background-position-y: center; background-position-x: center;">
-                                                        </div>
-                                                        <div class="imageRestau2" id="imageRestau2" style="background-size: cover;
-                                                        background-repeat: no-repeat; background-position-y: center; background-position-x: center;">
-                                                        </div>
-                                                        <div class="imageRestau3" id="imageRestau3" style="background-size: cover;
-                                                        background-repeat: no-repeat; background-position-y: center; background-position-x: center;">
-                                                        </div>
-                                                        <div class="imageRestau4">
-                                                        </div>
-                                                        <h2>`+ restaurant[0]['Nom'] +`<img src="img/projecteur.png" height="70px"></h2>
-                                                        `
-                                                        if(restaurant[0]["Etoiles"] == 5){
-                                                        document.getElementById("popup").innerHTML += 
-                                                            `<div class="etoiles">
-                                                            <img class="stars" src="img/starr.png" height="30px">
-                                                            <img class="stars"  src="img/starr.png" height="30px">
-                                                            <img  class="stars" src="img/starr.png" height="30px">
-                                                            <img class="stars"  src="img/starr.png" height="30px">
-                                                            <img  class="stars" src="img/starr.png" height="30px">
-                                                            </div>`
-                                                        }
-                                                        if(restaurant[0]["Etoiles"] == 4){
-                                                        document.getElementById("popup").innerHTML += 
-                                                            `<div class="etoiles">
-                                                            <img class="stars" src="img/starr.png" height="30px">
-                                                            <img class="stars"  src="img/starr.png" height="30px">
-                                                            <img  class="stars" src="img/starr.png" height="30px">
-                                                            <img class="stars"  src="img/starr.png" height="30px">
-                                                            </div>`
-                                                        }
-                                                        if(restaurant[0]["Etoiles"] == 3){
-                                                        document.getElementById("popup").innerHTML += 
-                                                            `<div class="etoiles">
-                                                            <img class="stars" src="img/starr.png" height="30px">
-                                                            <img class="stars"  src="img/starr.png" height="30px">
-                                                            <img  class="stars" src="img/starr.png" height="30px">
-                                                            </div>`
-                                                        }
-                                                        if(restaurant[0]["Etoiles"] == 2){
-                                                        document.getElementById("popup").innerHTML += 
-                                                            `<div class="etoiles">
-                                                            <img class="stars" src="img/starr.png" height="30px">
-                                                            <img class="stars"  src="img/starr.png" height="30px">
-                                                            </div>`
-                                                        }
-                                                        if(restaurant[0]["Etoiles"] == 1){
-                                                        document.getElementById("popup").innerHTML += 
-                                                            `<div class="etoiles">
-                                                            <img class="stars" src="img/starr.png" height="30px">
-                                                            </div>`
-                                                        }
-                                                            if(restaurant[0]["Etoiles"] == 0){
+    <div id="overlay" class="overlay" onclick="closeAvecOverlay()">
 
-                                                        } 
-                                                            document.getElementById("popup").innerHTML += `
-                                                        <div class="information">
-                                                        <h4><img src="img/pointAdresse1.png" height="15px"> `+ restaurant[0]['Adresse'] +`</h4>
-                                                        <h4><img src="img/iconTel.png" height="15px"> `+ restaurant[0]['Telephone'] +`</h4>
-                                                        </div>
-                                                        <h3>Critique :</h3>
-                                                        <p>`+ restaurant[0]['Critique'] +`</p>
-                                                        <div class="note">
-                                                            <p>Qualité du service : `+ restaurant[0]['NoteService'] +`/5</p>
-                                                            <p>Maîtrise des cuissons et des saveurs : `+ restaurant[0]['NoteCuisson'] +`/5</p>
-                                                            <p>Richesse de la carte : `+ restaurant[0]['NoteCarte'] +`/5</p>
-                                                            <p>Rapport qualité/prix : `+ restaurant[0]['NotePrix'] +`/5</p>
-                                                        </div>
     </div>
+    <div id="popup1">
+        <span onclick="closeModal1()" id="btnClose" class="btnClose">&times;</span>
+    </div> 
+    <div id="popup2">
+
+    </div> 
+    <div id="popup3">
+
+    </div> 
 </body>
 </html>
 <script src="JavaScript/JavaScipt.js"></script>
