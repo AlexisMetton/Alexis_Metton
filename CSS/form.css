@@ -642,11 +642,11 @@ footer h3{
 }
 #popup1{
     top: 0;
-    left: 10%;
-    margin: 20vh auto;
+    left: 17%;
+    margin: 10vh auto;
     position: fixed;
-    width:80%;
-    height: 65%;
+    width:65%;
+    height: 80%;
     background-color: rgba(27, 27, 27, 0.562);
     border-radius: 10px;
     box-shadow: 10px 10px 20px 10px rgba(245, 245, 245, 0.24);
@@ -658,11 +658,11 @@ footer h3{
 }
 #popup2{
     top: 0;
-    left: 10%;
-    margin: 30vh auto;
+    left: 17%;
+    margin: 10vh auto;
     position: fixed;
-    width:80%;
-    height: 50%;
+    width:65%;
+    height: 80%;
     background-color: rgba(27, 27, 27, 0.562);
     border-radius: 10px;
     box-shadow: 10px 10px 20px 10px rgba(245, 245, 245, 0.24);
@@ -674,11 +674,11 @@ footer h3{
 }
 #popup3{
     top: 0;
-    left: 10%;
-    margin: 30vh auto;
+    left: 17%;
+    margin: 10vh auto;
     position: fixed;
-    width:80%;
-    height: 50%;
+    width:65%;
+    height: 80%;
     background-color: rgba(27, 27, 27, 0.562);
     border-radius: 10px;
     box-shadow: 10px 10px 20px 10px rgba(245, 245, 245, 0.24);
