@@ -116,6 +116,7 @@ nav .burger{
     width: 100%;
     text-align: center;
     display: none;
+    margin-top: 15px;
 }
 .nav a{
     margin-top: 5px;
