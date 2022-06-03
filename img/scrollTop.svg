@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="30mm"
+   height="15mm"
+   viewBox="0 0 30 15"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="scrollTop.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="4"
+     inkscape:cx="37.125"
+     inkscape:cy="13.625"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#7b66ff;stroke-width:0.721744;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 1.0895295,14.459892 C 15.200148,4.2325149 15.200148,4.2325149 15.200148,4.2325149 L 29.49402,14.592716"
+       id="path1205" />
+    <path
+       style="fill:none;stroke:#f5f5f5;stroke-width:0.721744;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 0.5031142,14.034859 C 14.613732,3.8074809 14.613732,3.8074809 14.613732,3.8074809 L 28.907605,14.167681"
+       id="path1205-7" />
+    <path
+       style="fill:none;stroke:#7b66ff;stroke-width:0.721744;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 1.0895292,11.484651 C 15.200148,1.2572774 15.200148,1.2572774 15.200148,1.2572774 L 29.49402,11.617474"
+       id="path1205-4" />
+    <path
+       style="fill:none;stroke:#f5f5f5;stroke-width:0.721744;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 0.50311388,11.059617 C 14.613732,0.83224347 14.613732,0.83224347 14.613732,0.83224347 L 28.907605,11.19244"
+       id="path1205-7-1" />
+  </g>
+</svg>
