@@ -571,6 +571,8 @@ footer h3{
         margin-top: 25px;
     }
 }
+/************************Section 3**********************************/
+
 /************************Section 5************************************/
 @media screen and (max-width:1200px){
     #section_5 .img {
@@ -655,7 +657,6 @@ footer h3{
     opacity: 0;
     overflow-y: scroll;
     overflow-x:hidden;
-    max-height: 500px;
     /*display: none;*/
 }
 #popup2{
@@ -697,117 +698,45 @@ footer h3{
     float: right;
     cursor: pointer;
     color: whitesmoke;
-    right: 30px;
-    top: 20px;
+    right: 10px;
+    top: 10px;
     position: sticky;
+    z-index: 2;
+    color: white;
 }
 #popup1 .imageRestau1{
     border-radius: 10px 10px 0 0;
     width: 100%;
-    position: absolute;
     transform: translateX(0%);
     transition: 250ms;
 }
-#popup2 .imageRestau2{
+#popup2 .imageRestau1{
     border-radius: 10px 10px 0 0;
-    height: 50%;
     width: 100%;
-    position: absolute;
-    transform: translateX(100%);
+    transform: translateX(0%);
     transition: 250ms;
 }
-#popup3 .imageRestau3{
+#popup3 .imageRestau1{
     border-radius: 10px 10px 0 0;
-    height: 50%;
-    position: absolute;
     width: 100%;
-    transform: translateX(200%);
+    transform: translateX(0%);
     transition: 250ms;
 }
-#popup1 .flecheGauche{
-    width: 50%;
-    height: 50%;
-    background-color:  rgba(245, 245, 245, 0);
-    float: left;
-    position: absolute;
-    z-index: 155;
-    border-style: none;
-    border-right: solid;
-    border-left: solid;
+#popup1 h3{
+    margin-top: 20px;
+    color: whitesmoke;
+    text-align: center;
 }
-#popup1 .flecheDroite{
-    width: 50%;
-    height: 50%;
-    background-color:  rgba(245, 245, 245, 0);
-    right: 0;
-    transform: rotate(180deg);
-    position: absolute;
-    z-index: 155;
-    border-style: none;
-    border-right: solid;
-    border-left: solid;
+#popup1 h1{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 60px;
 }
-#popup1 .flecheGauche:hover{
-    background-color: whitesmoke
+#popup1 p span{
+    color: rgba(123, 102, 255);
+    text-align: center;
 }
-#popup1 .flecheDroite:hover{
-    background-color: whitesmoke
-}
-#popup2 .flecheGauche{
-    width: 20px;
-    height: 50%;
-    background-color:  rgba(245, 245, 245, 0.356);
-    float: left;
-    position: absolute;
-    z-index: 155;
-    border-style: none;
-    border-right: solid;
-    border-left: solid;
-}
-#popup2 .flecheDroite{
-    width: 20px;
-    height: 50%;
-    background-color:  rgba(245, 245, 245, 0.356);
-    right: 0;
-    transform: rotate(180deg);
-    position: absolute;
-    z-index: 155;
-    border-style: none;
-    border-right: solid;
-    border-left: solid;
-}
-#popup2 .flecheGauche:hover{
-    background-color: whitesmoke
-}
-#popup2 .flecheDroite:hover{
-    background-color: whitesmoke
-}
-#popup3 .flecheGauche{
-    width: 20px;
-    height: 50%;
-    background-color:  rgba(245, 245, 245, 0.356);
-    float: left;
-    position: absolute;
-    z-index: 155;
-    border-style: none;
-    border-right: solid;
-    border-left: solid;
-}
-#popup3 .flecheDroite{
-    width: 20px;
-    height: 50%;
-    background-color:  rgba(245, 245, 245, 0.356);
-    right: 0;
-    transform: rotate(180deg);
-    position: absolute;
-    z-index: 155;
-    border-style: none;
-    border-right: solid;
-    border-left: solid;
-}
-#popup3 .flecheGauche:hover{
-    background-color: whitesmoke
-}
-#popup3 .flecheDroite:hover{
-    background-color: whitesmoke
+#popup1 p{
+    color: whitesmoke;
+    text-align: center;
 }
