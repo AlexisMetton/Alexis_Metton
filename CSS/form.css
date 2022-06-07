@@ -414,12 +414,8 @@ nav .burger{
 
 #section_5 label + input:hover, #section_5 label + input:focus, #section_5 label + textarea:hover, #section_5 label + textarea:focus {
     background-color: rgb(37, 37, 37);
+    color: whitesmoke;
 }
-
-#section_5 label + input:focus:invalid, #section_5 label + textarea:focus:invalid {
-    background-color: rgb(199, 53, 53);
-}
-
 #section_5 form div {
     flex-wrap: nowrap;
     width: 100%;
