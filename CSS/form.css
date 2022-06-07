@@ -657,6 +657,7 @@ footer h3{
     opacity: 0;
     overflow-y: scroll;
     overflow-x:hidden;
+    max-height: 50vh;
     /*display: none;*/
 }
 #popup2{
@@ -731,12 +732,38 @@ footer h3{
     color: whitesmoke;
     text-align: center;
     font-size: 60px;
+    margin-bottom: 30px;
 }
 #popup1 p span{
     color: rgba(123, 102, 255);
     text-align: center;
+    padding-right: 20px;
 }
 #popup1 p{
     color: whitesmoke;
     text-align: center;
+    text-align: left;
+    text-align: center;
+}
+#popup1 .utilisation{
+    text-align: center;
+}
+#popup1 .liens{
+    text-align: center;
+}
+#popup1 .utilisation button{
+    background-color: rgb(123, 102, 255);
+    border-radius: 5px;
+    border-style: none;
+    padding: 5px;
+}
+#popup1 .liens button{
+    background-color: transparent;
+    padding: 10px;
+    color: rgb(123, 102, 255);
+    border-color: rgb(123, 102, 255);
+}
+#popup1 .liens button:hover{
+    background-color: rgb(123, 102, 255);
+    color: black;
 }
