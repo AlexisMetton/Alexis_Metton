@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!--<link rel="icon" href="img/Projecteur.png">-->
+    <link rel="icon" href="img/Logo.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -256,9 +256,9 @@
     <!--<div class="gauche" id="gauche" src="img/jadoo.png">
         <img src="img/droite.png" height="30px">
     </div>-->
-    <img class="imageRestau2" id="imageRestau2">
+    <img class="imageRestau2" id="imageRestau2" src="img/enlight2.PNG">
     </img>
-    <img class="imageRestau3" id="imageRestau3">
+    <img class="imageRestau3" id="imageRestau3" src="img/enlight3.PNG">
     </img>
     <h3>Site Web</h3>
     <h1>Enlight Meal</h1>
