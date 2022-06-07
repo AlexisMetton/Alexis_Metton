@@ -81,7 +81,7 @@
             <img src="img/wordpress.png" height="100px">
             <img src="img/figma.png" height="100px">
             <img src="img/mysql.png" height="100px">
-            <img src="img/raspberry.png" height="100px">
+            <img src="img/vscode.png" height="100px">
         </div>
         <div class="travail">
             <div class="comp">
@@ -247,7 +247,7 @@
             <button>Paint</button>
         </div>
         <div class="liens" style="margin-bottom: 10px;">
-            <a href="https://github.com/AlexisMetton/Jadoo" target="_blank"><button><img src="img/github.png" height="10px" style="margin-right: 5px;">Git Hub</button></a>
+            <a href="https://github.com/AlexisMetton/Travelers_Life" target="_blank"><button><img src="img/github.png" height="10px" style="margin-right: 5px;">Git Hub</button></a>
         </div>
     </div> 
     <div id="popup3">
@@ -284,7 +284,7 @@
         <button>Figma</button>
     </div>
     <div class="liens" style="margin-bottom: 10px;">
-        <a href="https://github.com/AlexisMetton/Jadoo" target="_blank"><button><img src="img/github.png" height="10px" style="margin-right: 5px;">Git Hub</button></a>
+        <a href="https://github.com/AlexisMetton/Enlight-Meal" target="_blank"><button><img src="img/github.png" height="10px" style="margin-right: 5px;">Git Hub</button></a>
     </div>
     </div> 
 </body>
