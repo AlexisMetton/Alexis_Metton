@@ -49,12 +49,12 @@ body{
     border-color: whitesmoke;
     border-width: 1px;
     z-index: 1;
-  }
+}
   #scroll_to_top:hover {
     transform: scale(1.05);
-  }
+}
 /***************************************************Header***************************************************************/
-nav {
+nav{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     width: 100%;
@@ -561,6 +561,10 @@ footer h3{
     66%   {transform: translateX(-100%) }
     100% { transform: translateX(100%) }
 }
+@keyframes saut{
+    50% {transform: translateY(-5px)}
+    100% {transform: translateY(0px)}
+}
 /***************************Media Queries***************************/
 /**************************Header****************************************/
 @media screen and (max-width:850px){
@@ -856,6 +860,12 @@ footer h3{
     padding: 5px;
     margin-bottom: 5px;
 }
+#popup1 .utilisation button:hover{
+    animation-duration: .5s;
+    animation-name: saut;
+    animation-iteration-count: infinite;
+    transition: none;
+}
 #popup1 .liens button{
     background-color: transparent;
     padding: 10px;
@@ -903,6 +913,12 @@ footer h3{
     border-style: none;
     padding: 5px;
     margin-bottom: 5px;
+}
+#popup2 .utilisation button:hover{
+    animation-duration: .5s;
+    animation-name: saut;
+    animation-iteration-count: infinite;
+    transition: none;
 }
 #popup2 .liens button{
     background-color: transparent;
@@ -958,6 +974,12 @@ footer h3{
     padding: 10px;
     color: rgb(123, 102, 255);
     border-color: rgb(123, 102, 255);
+}
+#popup3 .utilisation button:hover{
+    animation-duration: .5s;
+    animation-name: saut;
+    animation-iteration-count: infinite;
+    transition: none;
 }
 #popup3 .liens button:hover{
     background-color: rgb(123, 102, 255);
