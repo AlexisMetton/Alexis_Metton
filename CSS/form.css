@@ -19,21 +19,21 @@ body{
     }
 .fleche{
     width: 100%;
-    animation-duration: .9s;
+    animation-duration: 2s;
     animation-name: clignoter1;
     animation-iteration-count: infinite;
     transition: none;
 }
 .fleche2{
     width: 100%;
-    animation-duration: .9s;
+    animation-duration: 2s;
     animation-name: clignoter2;
     animation-iteration-count: infinite;
     transition: none;
 }
 .fleche3{
     width: 100%;
-    animation-duration: .9s;
+    animation-duration: 2s;
     animation-name: clignoter3;
     animation-iteration-count: infinite;
     transition: none;
@@ -543,6 +543,24 @@ footer h3{
     40%   {opacity:0; }
     90% { opacity:1; }
   }
+@keyframes carrousel1{
+    25%   {transform: translateX(0%) }
+    50% { transform: translateX(-100%) }
+    75%   {transform: translateX(-200%) }
+    100% { transform: translateX(0%) }
+}
+@keyframes carrousel2{
+    25%   {transform: translateX(0%) }
+    50% { transform: translateX(-100%) }
+    75%   {transform: translateX(-200%) }
+    100% { transform: translateX(0%) }
+}
+@keyframes carrousel3{
+    25%   {transform: translateX(0%) }
+    50% { transform: translateX(0%) }
+    75%   {transform: translateX(-100%) }
+    100% { transform: translateX(100%) }
+}
 /***************************Media Queries***************************/
 /**************************Header****************************************/
 @media screen and (max-width:850px){
@@ -646,7 +664,7 @@ footer h3{
     position: fixed;
     width:65%;
     height: 80%;
-    background-color: rgba(27, 27, 27, 0.664);
+    background-color: rgba(27, 27, 27, 0.800);
     border-radius: 10px;
     box-shadow: 10px 10px 20px 10px rgba(245, 245, 245, 0.24);
     z-index: -2;
@@ -663,7 +681,7 @@ footer h3{
     position: fixed;
     width:65%;
     height: 80%;
-    background-color: rgba(27, 27, 27, 0.664);
+    background-color: rgba(27, 27, 27, 0.800);
     border-radius: 10px;
     box-shadow: 10px 10px 20px 10px rgba(245, 245, 245, 0.24);
     z-index: -2;
@@ -680,7 +698,7 @@ footer h3{
     position: fixed;
     width:65%;
     height: 80%;
-    background-color: rgba(27, 27, 27, 0.664);
+    background-color: rgba(27, 27, 27, 0.800);
     border-radius: 10px;
     box-shadow: 10px 10px 20px 10px rgba(245, 245, 245, 0.24);
     z-index: -2;
@@ -709,6 +727,10 @@ footer h3{
     transform: translateX(0%);
     transition: 250ms;
     z-index: 1;
+    animation-duration: 9s;
+    animation-name: carrousel1;
+    animation-iteration-count: infinite;
+    transition: none;
 }
 #popup1 .imageRestau2{
     border-radius: 10px 10px 0 0;
@@ -716,6 +738,10 @@ footer h3{
     position: absolute;
     transform: translateX(100%);
     transition: 250ms;
+    animation-duration: 9s;
+    animation-name: carrousel2;
+    animation-iteration-count: infinite;
+    transition: none;
 }
 #popup1 .imageRestau3{
     border-radius: 10px 10px 0 0;
@@ -723,29 +749,76 @@ footer h3{
     width: 100%;
     transform: translateX(200%);
     transition: 250ms;
-}
-#popup1 .gauche{
-    top: 50%;
-    position: absolute;
-    width: 5%;
-    height: 50px;
-    z-index: 5;
-    transform: translateX(0%);
-}
-#popup1 .gauche img{
-    transform: rotate(180deg);
+    animation-duration: 9s;
+    animation-name: carrousel3;
+    animation-iteration-count: infinite;
+    transition: none;
 }
 #popup2 .imageRestau1{
     border-radius: 10px 10px 0 0;
     width: 100%;
     transform: translateX(0%);
     transition: 250ms;
+    z-index: 1;
+    animation-duration: 9s;
+    animation-name: carrousel1;
+    animation-iteration-count: infinite;
+    transition: none;
+}
+#popup2 .imageRestau2{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    position: absolute;
+    transform: translateX(100%);
+    transition: 250ms;
+    animation-duration: 9s;
+    animation-name: carrousel2;
+    animation-iteration-count: infinite;
+    transition: none;
+}
+#popup2 .imageRestau3{
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    width: 100%;
+    transform: translateX(200%);
+    transition: 250ms;
+    animation-duration: 9s;
+    animation-name: carrousel3;
+    animation-iteration-count: infinite;
+    transition: none;
 }
 #popup3 .imageRestau1{
     border-radius: 10px 10px 0 0;
     width: 100%;
     transform: translateX(0%);
     transition: 250ms;
+    z-index: 1;
+    animation-duration: 9s;
+    animation-name: carrousel1;
+    animation-iteration-count: infinite;
+    transition: none;
+}
+#popup3 .imageRestau2{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    position: absolute;
+    transform: translateX(100%);
+    transition: 250ms;
+    animation-duration: 9s;
+    animation-name: carrousel2;
+    animation-iteration-count: infinite;
+    transition: none;
+}
+#popup3 .imageRestau3{
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    width: 100%;
+    transform: translateX(200%);
+    transition: 250ms;
+    animation-duration: 9s;
+    animation-name: carrousel3;
+    animation-iteration-count: infinite;
+    transition: none;
 }
 #popup1 h3{
     margin-top: 20px;

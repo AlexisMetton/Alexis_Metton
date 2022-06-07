@@ -198,9 +198,9 @@
         <!--<div class="gauche" id="gauche" src="img/jadoo.png">
             <img src="img/droite.png" height="30px">
         </div>-->
-        <img class="imageRestau2" id="imageRestau2" src="img/jadoo2.jpg">
+        <img class="imageRestau2" id="imageRestau2" src="img/jadoo2.png">
         </img>
-        <img class="imageRestau3" id="imageRestau3" src="img/jadoo3.jpg">
+        <img class="imageRestau3" id="imageRestau3" src="img/jadoo3.png">
         </img>
         <h3>Site Web</h3>
         <h1>Jadoo</h1>
@@ -227,9 +227,9 @@
         <!--<div class="gauche" id="gauche" src="img/jadoo.png">
             <img src="img/droite.png" height="30px">
         </div>-->
-        <img class="imageRestau2" id="imageRestau2">
+        <img class="imageRestau2" id="imageRestau2" src="img/travelers2.PNG">
         </img>
-        <img class="imageRestau3" id="imageRestau3">
+        <img class="imageRestau3" id="imageRestau3" src="img/travelers3.PNG">
         </img>
         <h3>Site Web</h3>
         <h1>Traveler's Life</h1>
