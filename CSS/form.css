@@ -674,6 +674,7 @@ footer h3{
     opacity: 0;
     overflow-y: scroll;
     overflow-x:hidden;
+    max-height: 50vh;
     /*display: none;*/
 }
 #popup3{
@@ -690,6 +691,7 @@ footer h3{
     opacity: 0;
     overflow-y: scroll;
     overflow-x:hidden;
+    max-height: 50vh;
     /*display: none;*/
 }
 ::-webkit-scrollbar {
@@ -710,6 +712,32 @@ footer h3{
     width: 100%;
     transform: translateX(0%);
     transition: 250ms;
+    z-index: 1;
+}
+#popup1 .imageRestau2{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    position: absolute;
+    transform: translateX(100%);
+    transition: 250ms;
+}
+#popup1 .imageRestau3{
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    width: 100%;
+    transform: translateX(200%);
+    transition: 250ms;
+}
+#popup1 .gauche{
+    top: 50%;
+    position: absolute;
+    width: 5%;
+    height: 50px;
+    z-index: 5;
+    transform: translateX(0%);
+}
+#popup1 .gauche img{
+    transform: rotate(180deg);
 }
 #popup2 .imageRestau1{
     border-radius: 10px 10px 0 0;
@@ -744,6 +772,7 @@ footer h3{
     text-align: center;
     text-align: left;
     text-align: center;
+    line-height: 30px;
 }
 #popup1 .utilisation{
     text-align: center;
@@ -766,4 +795,100 @@ footer h3{
 #popup1 .liens button:hover{
     background-color: rgb(123, 102, 255);
     color: black;
+    transition: 250ms;
+}
+
+#popup2 h3{
+    margin-top: 20px;
+    color: whitesmoke;
+    text-align: center;
+}
+#popup2 h1{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+#popup2 p span{
+    color: rgba(123, 102, 255);
+    text-align: center;
+    padding-right: 20px;
+}
+#popup2 p{
+    color: whitesmoke;
+    text-align: center;
+    text-align: left;
+    text-align: center;
+    line-height: 30px;
+}
+#popup2 .utilisation{
+    text-align: center;
+}
+#popup2 .liens{
+    text-align: center;
+}
+#popup2 .utilisation button{
+    background-color: rgb(123, 102, 255);
+    border-radius: 5px;
+    border-style: none;
+    padding: 5px;
+}
+#popup2 .liens button{
+    background-color: transparent;
+    padding: 10px;
+    color: rgb(123, 102, 255);
+    border-color: rgb(123, 102, 255);
+}
+#popup2 .liens button:hover{
+    background-color: rgb(123, 102, 255);
+    color: black;
+    transition: 250ms;
+}
+
+
+#popup3 h3{
+    margin-top: 20px;
+    color: whitesmoke;
+    text-align: center;
+}
+#popup3 h1{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+#popup3 p span{
+    color: rgba(123, 102, 255);
+    text-align: center;
+    padding-right: 20px;
+}
+#popup3 p{
+    color: whitesmoke;
+    text-align: center;
+    text-align: left;
+    text-align: center;
+    line-height: 30px;
+}
+#popup3 .utilisation{
+    text-align: center;
+}
+#popup3 .liens{
+    text-align: center;
+}
+#popup3 .utilisation button{
+    background-color: rgb(123, 102, 255);
+    border-radius: 5px;
+    border-style: none;
+    padding: 5px;
+}
+#popup3 .liens button{
+    background-color: transparent;
+    padding: 10px;
+    color: rgb(123, 102, 255);
+    border-color: rgb(123, 102, 255);
+}
+#popup3 .liens button:hover{
+    background-color: rgb(123, 102, 255);
+    color: black;
+    transition: 250ms;
 }
