@@ -657,7 +657,7 @@ footer h3{
     opacity: 0;
     overflow-y: scroll;
     overflow-x:hidden;
-    max-height: 50vh;
+    max-height: 65vh;
     /*display: none;*/
 }
 #popup2{
@@ -674,7 +674,7 @@ footer h3{
     opacity: 0;
     overflow-y: scroll;
     overflow-x:hidden;
-    max-height: 50vh;
+    max-height: 65vh;
     /*display: none;*/
 }
 #popup3{
@@ -691,7 +691,7 @@ footer h3{
     opacity: 0;
     overflow-y: scroll;
     overflow-x:hidden;
-    max-height: 50vh;
+    max-height: 65vh;
     /*display: none;*/
 }
 ::-webkit-scrollbar {
@@ -785,6 +785,7 @@ footer h3{
     border-radius: 5px;
     border-style: none;
     padding: 5px;
+    margin-bottom: 5px;
 }
 #popup1 .liens button{
     background-color: transparent;
@@ -832,6 +833,7 @@ footer h3{
     border-radius: 5px;
     border-style: none;
     padding: 5px;
+    margin-bottom: 5px;
 }
 #popup2 .liens button{
     background-color: transparent;
@@ -880,6 +882,7 @@ footer h3{
     border-radius: 5px;
     border-style: none;
     padding: 5px;
+    margin-bottom: 5px;
 }
 #popup3 .liens button{
     background-color: transparent;
