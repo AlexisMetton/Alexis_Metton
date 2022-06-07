@@ -544,21 +544,21 @@ footer h3{
     90% { opacity:1; }
   }
 @keyframes carrousel1{
-    25%   {transform: translateX(0%) }
-    50% { transform: translateX(-100%) }
-    75%   {transform: translateX(-200%) }
+    0%   {transform: translateX(0%) }
+    33% { transform: translateX(-100%) }
+    66%   {transform: translateX(-200%) }
     100% { transform: translateX(0%) }
 }
 @keyframes carrousel2{
-    25%   {transform: translateX(0%) }
-    50% { transform: translateX(-100%) }
-    75%   {transform: translateX(-200%) }
+    0%   {transform: translateX(0%) }
+    33% { transform: translateX(-100%) }
+    66%   {transform: translateX(-200%) }
     100% { transform: translateX(0%) }
 }
 @keyframes carrousel3{
-    25%   {transform: translateX(0%) }
-    50% { transform: translateX(0%) }
-    75%   {transform: translateX(-100%) }
+    0%   {transform: translateX(0%) }
+    33% { transform: translateX(0%) }
+    66%   {transform: translateX(-100%) }
     100% { transform: translateX(100%) }
 }
 /***************************Media Queries***************************/
@@ -727,7 +727,7 @@ footer h3{
     transform: translateX(0%);
     transition: 250ms;
     z-index: 1;
-    animation-duration: 9s;
+    animation-duration: 11s;
     animation-name: carrousel1;
     animation-iteration-count: infinite;
     transition: none;
@@ -738,7 +738,7 @@ footer h3{
     position: absolute;
     transform: translateX(100%);
     transition: 250ms;
-    animation-duration: 9s;
+    animation-duration: 11s;
     animation-name: carrousel2;
     animation-iteration-count: infinite;
     transition: none;
@@ -749,7 +749,7 @@ footer h3{
     width: 100%;
     transform: translateX(200%);
     transition: 250ms;
-    animation-duration: 9s;
+    animation-duration: 11s;
     animation-name: carrousel3;
     animation-iteration-count: infinite;
     transition: none;
@@ -760,7 +760,7 @@ footer h3{
     transform: translateX(0%);
     transition: 250ms;
     z-index: 1;
-    animation-duration: 9s;
+    animation-duration: 11s;
     animation-name: carrousel1;
     animation-iteration-count: infinite;
     transition: none;
@@ -771,7 +771,7 @@ footer h3{
     position: absolute;
     transform: translateX(100%);
     transition: 250ms;
-    animation-duration: 9s;
+    animation-duration: 11s;
     animation-name: carrousel2;
     animation-iteration-count: infinite;
     transition: none;
@@ -782,7 +782,7 @@ footer h3{
     width: 100%;
     transform: translateX(200%);
     transition: 250ms;
-    animation-duration: 9s;
+    animation-duration: 11s;
     animation-name: carrousel3;
     animation-iteration-count: infinite;
     transition: none;
@@ -793,7 +793,7 @@ footer h3{
     transform: translateX(0%);
     transition: 250ms;
     z-index: 1;
-    animation-duration: 9s;
+    animation-duration: 11s;
     animation-name: carrousel1;
     animation-iteration-count: infinite;
     transition: none;
@@ -804,7 +804,7 @@ footer h3{
     position: absolute;
     transform: translateX(100%);
     transition: 250ms;
-    animation-duration: 9s;
+    animation-duration: 11s;
     animation-name: carrousel2;
     animation-iteration-count: infinite;
     transition: none;
@@ -815,7 +815,7 @@ footer h3{
     width: 100%;
     transform: translateX(200%);
     transition: 250ms;
-    animation-duration: 9s;
+    animation-duration: 11s;
     animation-name: carrousel3;
     animation-iteration-count: infinite;
     transition: none;
