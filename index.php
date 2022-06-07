@@ -171,7 +171,7 @@
         <div class="ligne">
             <div id="logofooter">
                 <a href="#"><p><span class="A">A</span><span class="M">M</span></p></a><br><br>
-                <a href="#">Mentions légales - RGPD</a>
+                <a href="mentions.html">Mentions légales - RGPD</a>
             </div>
             <div id="reseaux">
                 <h3>Pour en savoir plus...</h3>
