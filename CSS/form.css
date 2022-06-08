@@ -1063,7 +1063,7 @@ footer h3{
 	 top: 0%;
 	 height: 5px;
 	 width: 10px;
-	 background: #fff;
+	 background: whitesmoke;
 }
  .bit-top-left {
 	 position: absolute;
@@ -1071,7 +1071,7 @@ footer h3{
 	 top: 5px;
 	 height: 5px;
 	 width: 5px;
-	 background: #fff;
+	 background: whitesmoke;
 }
  .bit-top-right {
 	 position: absolute;
@@ -1079,7 +1079,7 @@ footer h3{
 	 top: 0%;
 	 height: 5px;
 	 width: 10px;
-	 background: #fff;
+	 background: whitesmoke;
 }
  .bit-top-right-2 {
 	 position: absolute;
@@ -1087,7 +1087,7 @@ footer h3{
 	 top: 0px;
 	 height: 10px;
 	 width: 5px;
-	 background: #fff;
+	 background: whitesmoke;
 }
  .bit-bottom-left {
 	 position: absolute;
@@ -1095,7 +1095,7 @@ footer h3{
 	 left: 0px;
 	 height: 10px;
 	 width: 5px;
-	 background: #fff;
+	 background: whitesmoke;
 }
  .bit-bottom-left-2 {
 	 position: absolute;
@@ -1103,7 +1103,7 @@ footer h3{
 	 left: 0px;
 	 height: 5px;
 	 width: 10px;
-	 background: #fff;
+	 background: whitesmoke;
 }
  .bit-bottom-right {
 	 position: absolute;
@@ -1111,7 +1111,7 @@ footer h3{
 	 right: 0px;
 	 height: 5px;
 	 width: 10px;
-	 background: #fff;
+	 background: whitesmoke;
 }
  .bit-bottom-right-2 {
 	 position: absolute;
@@ -1119,17 +1119,17 @@ footer h3{
 	 right: 0px;
 	 height: 10px;
 	 width: 5px;
-	 background: #fff;
+	 background: whitesmoke;
 }
  .blur {
 	 position: absolute;
-	 color: #fefefe;
+	 color: whitesmoke;
 	 font-family: 'Overpass', sans-serif;
 	 font-size: 40px;
 	 letter-spacing: 10px;
 	 margin: auto;
 	 width: 100%;
-	 filter: blur(10px);
+	 filter: blur(8px);
 	 cursor: none;
 	 overflow: hidden;
 	 text-align: center;
