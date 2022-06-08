@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/form.css"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <title>Alexis Metton</title>
 </head>
 <body>
@@ -40,7 +41,7 @@
         </div>
     </header>
     <section id="section_1">
-    <div>
+    <div class="absolute">
         <div><img src="img/hautform.svg"></div>
         <div style="display: grid;grid-template-rows: 1fr 1fr;" >
             <marquee behavior="alternate"><h1><span>W</span>EB <span>D</span>EVELOPER</h1></marquee>
@@ -48,6 +49,33 @@
         </div>
         <div><img src="img/basform.svg"></div>
     </div><br><br>
+    <div id="focus-container" class="container">
+        <div class="left-side"></div>
+        <div class="right-side"></div>
+        <div class="hover">
+          <div class="tri-1">
+            <div class="bit-top"></div>
+            <div class="bit-top-left"></div>
+          </div>
+          <div class="tri-2">
+            <div class="bit-top-right"></div>
+            <div class="bit-top-right-2"></div>
+          </div>
+          
+          <div class="tri-3">
+            <div class="bit-bottom-left"></div>
+            <div class="bit-bottom-left-2"></div>
+          </div>
+          
+          <div class="tri-4">
+            <div class="bit-bottom-right"></div>
+            <div class="bit-bottom-right-2"></div>
+          </div>
+          
+        </div>
+        <p class="blur">ALEXIS METTON</p>
+        <p class="focus">ALEXIS METTON</p>
+      </div>
     <h1 class="nom" id="nom">ALEXIS METTON</h1><br><br>
         <a href="#section_2"><img class="fleche" src="img/fleche.svg" height="50px"></a>
         <a href="#section_2"><img class="fleche2" src="img/fleche.svg" height="50px"></a>
