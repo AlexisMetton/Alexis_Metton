@@ -77,9 +77,9 @@
         <p class="focus">ALEXIS METTON</p>
       </div>
     <h1 class="nom" id="nom">ALEXIS METTON</h1><br><br>
-        <a href="#section_2"><img class="fleche" src="img/fleche.svg" height="50px"></a>
-        <a href="#section_2"><img class="fleche2" src="img/fleche.svg" height="50px"></a>
-        <a href="#section_2"><img class="fleche3" src="img/fleche.svg" height="50px"></a>
+        <a href="#section_2"><img class="flechea" src="img/fleche.svg" height="50px"></a>
+        <a href="#section_2"><img class="fleche2a" src="img/fleche.svg" height="50px"></a>
+        <a href="#section_2"><img class="fleche3a" src="img/fleche.svg" height="50px"></a>
     </section>
     <section id="section_2">
         <div class="recadre"></div>
