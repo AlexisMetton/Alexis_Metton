@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="79mm"
+   width="75mm"
    height="70mm"
-   viewBox="0 0 79 70"
+   viewBox="0 0 75 70"
    version="1.1"
    id="svg5"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
@@ -25,13 +25,14 @@
      showgrid="false"
      inkscape:zoom="1.4142136"
      inkscape:cx="152.38151"
-     inkscape:cy="92.984542"
+     inkscape:cy="92.984539"
      inkscape:window-width="1600"
      inkscape:window-height="837"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer1"
+     width="78mm" />
   <defs
      id="defs2">
     <rect
@@ -101,48 +102,48 @@
      id="layer1">
     <text
        xml:space="preserve"
-       transform="matrix(0.31630336,0,0,0.25100103,-39.175138,-31.200382)"
+       transform="matrix(0.30113636,0,0,0.25031136,-37.274013,-31.112645)"
        id="text2980"
        style="font-style:normal;font-weight:normal;font-size:192px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect2982);fill:#7b66ff;fill-opacity:1;stroke:none"><tspan
          x="132.56836"
          y="273.17383"
-         id="tspan37526"><tspan
+         id="tspan871"><tspan
            style="-inkscape-font-specification:sans-serif"
-           id="tspan37524">A</tspan></tspan></text>
+           id="tspan869">A</tspan></tspan></text>
     <text
        xml:space="preserve"
-       transform="matrix(0.36058,0,0,0.25100103,-18.908353,2.9573915)"
+       transform="matrix(0.3432899,0,0,0.25031136,-17.979036,2.9512743)"
        id="text2980-0"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:179.826px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;white-space:pre;shape-inside:url(#rect2982-6);fill:#7b66ff;fill-opacity:1;stroke:none"><tspan
          x="132.56836"
          y="262.40269"
-         id="tspan37528">M</tspan></text>
+         id="tspan873">M</tspan></text>
     <text
        xml:space="preserve"
-       transform="matrix(0.31630336,0,0,0.25100103,-65.237422,-21.260614)"
+       transform="matrix(0.30113636,0,0,0.25031136,-62.08659,-21.200188)"
        id="text25319"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect25321);fill:#000000;fill-opacity:1;stroke:none" />
     <text
        xml:space="preserve"
-       transform="matrix(0.31630336,0,0,0.25100103,-41.933993,-32.703538)"
+       transform="matrix(0.30113636,0,0,0.25031136,-39.900578,-32.61167)"
        id="text2980-3"
        style="font-style:normal;font-weight:normal;font-size:192px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect2982-7);fill:#000000;fill-opacity:1;stroke:none"><tspan
          x="132.56836"
          y="273.17383"
-         id="tspan37532"><tspan
+         id="tspan877"><tspan
            style="-inkscape-font-specification:sans-serif"
-           id="tspan37530">A</tspan></tspan></text>
+           id="tspan875">A</tspan></tspan></text>
     <text
        xml:space="preserve"
-       transform="matrix(0.36058,0,0,0.25100103,-21.606353,1.5960425)"
+       transform="matrix(0.3432899,0,0,0.25031136,-20.547665,1.5936658)"
        id="text2980-0-9"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:179.826px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;white-space:pre;shape-inside:url(#rect2982-6-2);fill:#000000;fill-opacity:1;stroke:none"><tspan
          x="132.56836"
          y="262.40269"
-         id="tspan37534">M</tspan></text>
+         id="tspan879">M</tspan></text>
     <text
        xml:space="preserve"
-       transform="matrix(0.31630336,0,0,0.25100103,-66.432136,-22.180863)"
+       transform="matrix(0.30113636,0,0,0.25031136,-63.224016,-22.117908)"
        id="text25319-2"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect25321-4);fill:#000000;fill-opacity:1;stroke:none" />
   </g>
