@@ -169,7 +169,7 @@ nav .burger{
     color: whitesmoke;
 }
 #section_1 .nom{
-    filter: blur(5px);
+    filter: blur(8px);
     text-align: center;
     display: none;
 }
