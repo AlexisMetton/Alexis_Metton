@@ -14,7 +14,7 @@
         if(isset($_COOKIE['cookieForm'])){
     ?>
     <?php setcookie('cookieForm', 1, time()-3600);?>
-    <p id="cookieForm" class="cookieForm" style="color:whitesmoke; text-shadow:0px 0px 10px rgba(123,102,255)">Formulaire bien envoyé !</p>
+    <p id="cookieForm" class="cookieForm" style="color:whitesmoke; text-shadow:0px 0px 10px rgba(123,102,255)">Message bien envoyé !</p>
     <?php
         }
     ?>
