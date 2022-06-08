@@ -247,9 +247,15 @@
             <button>PHP</button>
             <button>MySQL</button>
         </div>
-        <div class="liens" style="margin-bottom: 10px;">
-            <a href="https://github.com/AlexisMetton/Jadoo" target="_blank"><button><img src="img/github.png" height="10px" style="margin-right: 5px;">Git Hub</button></a>
-        </div>
+        <section class="portfolio-experiment">
+        <a href="https://github.com/AlexisMetton/Jadoo" target="_blank" style="text-decoration: none;">
+          <span class="text"><img src="img/github.png" height="16px" style="margin-right: 5px;">Git Hub</span>
+          <span class="line -right"></span>
+          <span class="line -top"></span>
+          <span class="line -left"></span>
+          <span class="line -bottom"></span>
+        </a>
+      </section>
     </div> 
     <div id="popup2">
         <img class="imageRestau1" id="imageRestau1" src="img/travelers.PNG">
@@ -276,9 +282,15 @@
             <button>JavaScript</button>
             <button>Paint</button>
         </div>
-        <div class="liens" style="margin-bottom: 10px;">
-            <a href="https://github.com/AlexisMetton/Travelers_Life" target="_blank"><button><img src="img/github.png" height="10px" style="margin-right: 5px;">Git Hub</button></a>
-        </div>
+        <section class="portfolio-experiment">
+        <a href="https://github.com/AlexisMetton/Travelers_Life" target="_blank" style="text-decoration: none;">
+          <span class="text"><img src="img/github.png" height="16px" style="margin-right: 5px;">Git Hub</span>
+          <span class="line -right"></span>
+          <span class="line -top"></span>
+          <span class="line -left"></span>
+          <span class="line -bottom"></span>
+        </a>
+      </section>
     </div> 
     <div id="popup3">
         <img class="imageRestau1" id="imageRestau1" src="img/enlight.PNG">
@@ -313,9 +325,15 @@
         <button>Bootstrap</button>
         <button>Figma</button>
     </div>
-    <div class="liens" style="margin-bottom: 10px;">
-        <a href="https://github.com/AlexisMetton/Enlight-Meal" target="_blank"><button><img src="img/github.png" height="10px" style="margin-right: 5px;">Git Hub</button></a>
-    </div>
+    <section class="portfolio-experiment">
+        <a href="https://github.com/AlexisMetton/Enlight-Meal" target="_blank" style="text-decoration: none;">
+          <span class="text"><img src="img/github.png" height="16px" style="margin-right: 5px;">Git Hub</span>
+          <span class="line -right"></span>
+          <span class="line -top"></span>
+          <span class="line -left"></span>
+          <span class="line -bottom"></span>
+        </a>
+      </section>
     </div> 
 </body>
 </html>
