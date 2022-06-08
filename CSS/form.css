@@ -23,6 +23,7 @@ body{
     animation-name: clignoter1;
     animation-iteration-count: infinite;
     transition: none;
+    margin-top: 30px;
 }
 .fleche2{
     width: 100%;
@@ -37,6 +38,7 @@ body{
     animation-name: clignoter3;
     animation-iteration-count: infinite;
     transition: none;
+    margin-bottom: 30px;
 }
 #scroll_to_top {
     position: fixed;
@@ -105,7 +107,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 10;
-    height: 40px;
+    height: 45px;
 }
 nav .burger{
     display: none;
@@ -154,9 +156,6 @@ nav .burger{
     animation: marquee 15s linear infinite;
 }
 /************************************Section 2***********************************/
-#section_2 .recadre{
-    padding-top:50px;
-}
 #section_2 .portrait{
     text-align: center;
 }
@@ -198,12 +197,21 @@ nav .burger{
     margin-top: 20px;
     cursor: pointer;
     margin-bottom: 50px;
-    border-width: 1px;
+    border-width: 2px;
 }
 #section_2 .CV:hover{
-    background-color: whitesmoke;
+    background-color: rgb(123, 102, 255);
     transition: 250ms;
-    transform: scale(1.1);
+    transform: scale(1.05);
+    border-color:whitesmoke;
+}
+#section_2 .acv{
+    padding-left: 42px;
+    padding-right: 42px;
+    color: rgb(123, 102, 255);
+}
+#section_2 .CV:hover .acv{
+    color: whitesmoke;
 }
 /*****************************************Section 3*************************************/
 #section_3 .titre{
@@ -341,7 +349,7 @@ nav .burger{
     width: 80%;
     margin: auto;
     border-radius: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 #section_4 p{
     padding-top: 20px;
@@ -378,7 +386,7 @@ nav .burger{
 /*********************************Section 5***************************************/
 #section_5 {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 #section_5 article {
     position: relative;
@@ -444,10 +452,11 @@ nav .burger{
 
 #section_5 form>input:hover, #section_5 form>input:focus {
     transform: scale(1.1);
-    background-color: whitesmoke;
+    background-color: rgb(123, 102, 255);
     transition: 250ms;
     border-style: solid;
-    border-color: rgb(123, 102, 255);
+    border-color: whitesmoke;
+    color: whitesmoke;
 }
 
 #section_5 .img {
@@ -681,7 +690,6 @@ footer h3{
     margin: 10vh auto;
     position: fixed;
     width:65%;
-    height: 80%;
     background-color: rgba(27, 27, 27, 0.800);
     border-radius: 10px;
     box-shadow: 10px 10px 20px 10px rgba(245, 245, 245, 0.24);
@@ -689,7 +697,7 @@ footer h3{
     opacity: 0;
     overflow-y: scroll;
     overflow-x:hidden;
-    max-height: 65vh;
+    max-height: 80%;
     /*display: none;*/
 }
 #popup2{
@@ -698,7 +706,6 @@ footer h3{
     margin: 10vh auto;
     position: fixed;
     width:65%;
-    height: 80%;
     background-color: rgba(27, 27, 27, 0.800);
     border-radius: 10px;
     box-shadow: 10px 10px 20px 10px rgba(245, 245, 245, 0.24);
@@ -706,7 +713,7 @@ footer h3{
     opacity: 0;
     overflow-y: scroll;
     overflow-x:hidden;
-    max-height: 65vh;
+    max-height: 80%;
     /*display: none;*/
 }
 #popup3{
@@ -715,7 +722,6 @@ footer h3{
     margin: 10vh auto;
     position: fixed;
     width:65%;
-    height: 80%;
     background-color: rgba(27, 27, 27, 0.800);
     border-radius: 10px;
     box-shadow: 10px 10px 20px 10px rgba(245, 245, 245, 0.24);
@@ -723,7 +729,7 @@ footer h3{
     opacity: 0;
     overflow-y: scroll;
     overflow-x:hidden;
-    max-height: 65vh;
+    max-height: 80%;
     /*display: none;*/
 }
 ::-webkit-scrollbar {
