@@ -74,6 +74,7 @@ body{
     border-color: whitesmoke;
     border-width: 1px;
     z-index: 1;
+    background-image:linear-gradient(rgb(27, 27, 27), rgb(123,102,255));
 }
   #scroll_to_top:hover {
     transform: scale(1.05);
