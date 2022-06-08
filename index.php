@@ -21,7 +21,7 @@
         <nav>
             <a href="#section_2">PROFIL <img class="rond" src="img/rond.svg" height="10px"></a>
             <a href="#section_3">COMPETENCES <img class="rond" src="img/rond.svg" height="10px"></a>
-            <a href=""><img src=img/logo.svg height="50px" style="padding-top:5px;"></a>
+            <a href=""><img src=img/logo.svg height="50px" style="padding-top:15px;transform:scale(1.9);"></a>
             <!--<a href=""><p><span class="A">A</span><span class="M">M</span></p></a>-->
             <a href="#section_4">PROJETS <img class="rond" src="img/rond.svg" height="10px"></a>
             <a href="#section_5">CONTACT <img class="rond" src="img/rond.svg" height="10px"></a>
