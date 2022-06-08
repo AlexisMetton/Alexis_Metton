@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="icon" href="img/Logo.png">
+    <link rel="icon" href="img/logo.svg">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,8 @@
         <nav>
             <a href="#section_2">PROFIL <img class="rond" src="img/rond.svg" height="10px"></a>
             <a href="#section_3">COMPETENCES <img class="rond" src="img/rond.svg" height="10px"></a>
-            <a href=""><p><span class="A">A</span><span class="M">M</span></p></a>
+            <a href=""><img src=img/logo.svg height="50px" style="padding-top:5px;"></a>
+            <!--<a href=""><p><span class="A">A</span><span class="M">M</span></p></a>-->
             <a href="#section_4">PROJETS <img class="rond" src="img/rond.svg" height="10px"></a>
             <a href="#section_5">CONTACT <img class="rond" src="img/rond.svg" height="10px"></a>
             <img id="burger" class="burger" src="img/burger.svg" height="30px" onclick="menu()">
@@ -170,8 +171,9 @@
     <footer>
         <div class="ligne">
             <div id="logofooter">
-                <a href="#"><p><span class="A">A</span><span class="M">M</span></p></a><br><br>
-                <a href="mentions.html">Mentions légales</a>
+                <a href=""><img src=img/logo.svg height="100px" style="padding-top:5px;"></a>
+                <!--<a href="#"><p><span class="A">A</span><span class="M">M</span></p></a><br><br>-->
+                <a href="mentions.html">entions légales</a>
             </div>
             <div id="reseaux">
                 <h3>Pour en savoir plus...</h3>

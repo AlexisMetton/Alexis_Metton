@@ -105,6 +105,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 10;
+    height: 40px;
 }
 nav .burger{
     display: none;
@@ -496,6 +497,9 @@ footer p .M{
     margin-top: 23px;
     z-index: -1;
 }
+footer a:hover{
+    text-decoration: underline;
+}
 footer a{
     color: black;
     font-weight: bold;
@@ -522,6 +526,13 @@ footer .droit{
 footer img:hover{
     transform: scale(1.1);
     transition: 250ms;
+}
+#logofooter img:hover{
+    transform: scale(1.0);
+    transition: 250ms;
+}
+#logofooter{
+    margin-top: 10px;
 }
 footer h3{
     color: black;
