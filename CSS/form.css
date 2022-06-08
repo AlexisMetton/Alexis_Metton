@@ -1035,7 +1035,7 @@ footer h3{
 
  .left-side {
 	 position: absolute;
-	 height: 70px;
+	 height: 50px;
 	 width: 100vw;
 	 background: rgb(27, 27, 27);
 	 overflow: hidden;
@@ -1043,7 +1043,7 @@ footer h3{
 }
  .right-side {
 	 position: absolute;
-	 height: 70px;
+	 height: 50px;
 	 width: 100vw;
 	 background: rgb(27, 27, 27);
 	 z-index: 3;
@@ -1052,8 +1052,8 @@ footer h3{
  .hover {
 	 position: absolute;
 	 float: left;
-	 height: 50px;
-	 width: 50px;
+	 height: 60px;
+	 width: 60px;
 	 cursor: none;
 	 overflow: hidden;
 }
@@ -1125,7 +1125,7 @@ footer h3{
 	 position: absolute;
 	 color: whitesmoke;
 	 font-family: 'Overpass', sans-serif;
-	 font-size: 40px;
+	 font-size: 50px;
 	 letter-spacing: 10px;
 	 margin: auto;
 	 width: 100%;
@@ -1140,7 +1140,7 @@ footer h3{
 	 position: absolute;
 	 color: whitesmoke;
 	 font-family: 'Overpass', sans-serif;
-	 font-size: 40px;
+	 font-size: 50px;
 	 letter-spacing: 10px;
 	 margin: auto;
 	 width: 100%;
