@@ -16,19 +16,19 @@ if(isset($_SESSION['pseudo'])){
     header ('location: ../index.php');
 }
 
-if(isset($_GET['Nom']) AND !empty($_GET['Nom'])){
+if(isset($_GET['nom']) AND !empty($_GET['nom'])){
 
-$getNom = $_GET['Nom'];
+$getNom = $_GET['nom'];
     
 $suppression = $conn->prepare ("SELECT *
                         FROM `projets`
-                        WHERE Nom = ?");
+                        WHERE nom = ?");
 $suppression->execute(array($getNom));
 
 if($suppression->rowcount() > 0){
     $delete = $conn->prepare ("DELETE
     FROM `projets`
-    WHERE Nom = ?");
+    WHERE nom = ?");
     $delete->execute(array($getNom));
     header('location:backAcceuil.php');
 

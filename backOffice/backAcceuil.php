@@ -93,7 +93,7 @@ catch (PDOException $e){
                 foreach($projet as $projets){
             ?>
             <div style="margin-left: 5px; margin-right: 5px;">
-            <a onclick="return confirm('Voulez-vous vraiment supprimer ce restaurant ?');" class="croix" style="float:right" href="supprimer.php?Nom=<?php echo $projets['Nom']; ?>">
+            <a onclick="return confirm('Voulez-vous vraiment supprimer ce restaurant ?');" class="croix" style="float:right" href="supprimer.php?nom=<?php echo $projets['nom']; ?>">
                 <button style="color:whitesmoke; background-color:transparent; border-color:whitesmoke">&times;</button>
             </a>
                 <div class="projet" id="projet" onclick="openModal<?php echo $projets['id_Categorie']; ?>()">
