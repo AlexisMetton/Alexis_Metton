@@ -93,6 +93,9 @@ catch (PDOException $e){
                 foreach($projet as $projets){
             ?>
             <div style="margin-left: 5px; margin-right: 5px;">
+            <a onclick="return confirm('Voulez-vous vraiment supprimer ce restaurant ?');" class="croix" style="float:right" href="supprimer.php?Nom=<?php echo $projets['Nom']; ?>">
+                <button style="color:whitesmoke; background-color:transparent; border-color:whitesmoke">&times;</button>
+            </a>
                 <div class="projet" id="projet" onclick="openModal<?php echo $projets['id_Categorie']; ?>()">
                     <img src="../img/<?php echo $projets['image1']; ?>">
                 </div>
@@ -109,7 +112,7 @@ catch (PDOException $e){
 <form action="nouveau.php" method="post">
                     <h2 class="text-center" style="color:whitesmoke;margin-top:20px">Ajouter un projet</h2>       
                     <div class="form-group">
-                        <input type="number" name="Numéroduprojet" class="form-control" placeholder="*"  min="1" autocomplete="off" required>
+                        <input type="number" name="Numéroduprojet" class="form-control" placeholder="*"  min="1" max="50" autocomplete="off" required>
                     </div>
                     <div class="form-group">
                         <input type="text" name="Nom" class="form-control" placeholder="Nom"  autocomplete="off" required>

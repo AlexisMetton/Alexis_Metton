@@ -206,10 +206,11 @@ nav form{
     height: 40px;
     border-radius:5px;
     background-color: rgb(27, 27, 27);
-    box-shadow: 0 0 5px rgb(123,102,255);
+    box-shadow: 0 0 5px rgb(75, 63, 143);
     color: whitesmoke;
     padding-left: 10px;
     padding-right: 10px;
+    border-width: 1px;
 }
 #popup1 .form-group textarea{
     width: 80%;
@@ -219,11 +220,12 @@ nav form{
     padding-left: 10px;
     padding-right: 10px;
     background-color: rgb(27, 27, 27);
-    box-shadow: 0 0 5px rgb(123,102,255);
+    box-shadow: 0 0 5px rgb(75, 63, 143);
     color: whitesmoke;
     resize: vertical;
+    padding-top: 10px;
 }
 #popup1 h2{
     margin-bottom: 10px;
-    text-shadow: 0 0 5px rgb(123,102,255);
+    text-shadow: 0 0 5px rgb(75, 63, 143);
 }
