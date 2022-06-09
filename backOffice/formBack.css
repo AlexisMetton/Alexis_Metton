@@ -186,3 +186,41 @@ nav form{
     max-height: 80%;
     /*display: none;*/
 }
+#popup1 form button{
+    background-color: transparent;
+    border-style: none;
+    color: whitesmoke;
+    font-size: 20px;
+}
+#popup1 form{
+    text-align: center;
+}
+#popup1 .form-group{
+    width: 100%;
+    margin-bottom: 5px;
+}
+#popup1 .form-group input{
+    width: 80%;
+    border-style: solid;
+    border-color: whitesmoke;
+    height: 40px;
+    border-radius:5px;
+    background-color: rgb(27, 27, 27);
+    box-shadow: 0 0 5px rgb(123,102,255);
+    color: whitesmoke;
+}
+#popup1 .form-group textarea{
+    width: 80%;
+    border-style: solid;
+    border-color: whitesmoke;
+    border-radius:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(27, 27, 27);
+    box-shadow: 0 0 5px rgb(123,102,255);
+    color: whitesmoke;
+}
+#popup1 h2{
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px rgb(123,102,255);
+}

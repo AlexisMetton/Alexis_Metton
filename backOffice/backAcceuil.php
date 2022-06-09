@@ -109,7 +109,7 @@ catch (PDOException $e){
 <form action="nouveau.php" method="post">
                     <h2 class="text-center" style="color:whitesmoke;margin-top:20px">Ajouter un projet</h2>       
                     <div class="form-group">
-                        <input type="number" name="Numéro du projet" class="form-control" placeholder="*"  min="0" autocomplete="off" required>
+                        <input type="number" name="Numéro du projet" class="form-control" placeholder="*"  min="1" autocomplete="off" required>
                     </div>
                     <div class="form-group">
                         <input type="text" name="Nom" class="form-control" placeholder="Nom"  autocomplete="off" required>
@@ -124,12 +124,15 @@ catch (PDOException $e){
                         <input type="file" name="Image3" class="form-control" placeholder="nomImage3.jpg"  autocomplete="off" required>
                     </div>     
                     <div class="form-group">
-                        <textarea cols="33" rows="15" name="Critique" class="form-control" maxlength="100000" placeholder="Critique"  autocomplete="off" required></textarea>
+                        <textarea cols="33" rows="15" name="Description" class="form-control" maxlength="100000" placeholder="Description"  autocomplete="off" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <textarea cols="33" rows="15" name="Outils" class="form-control" maxlength="100000" placeholder="Outils"  autocomplete="off" required></textarea>
                     </div>
                     <div class="form-group">
                         <section class="portfolio-experiment">
                         <a style="text-decoration: none;">
-                            <span class="text"><button type="submit" name="envoi" class="btn btn-primary btn-block">Validez</button></span>
+                            <span class="text"><button type="submit" name="envoi">Validez</button></span>
                             <span class="line -right"></span>
                             <span class="line -top"></span>
                             <span class="line -left"></span>
