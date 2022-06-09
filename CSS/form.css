@@ -382,11 +382,12 @@ nav .burger{
     text-align: center;
     font-size: 30px;
     text-shadow: 1px 0 10px rgb(123, 102, 255);
+    margin-bottom: 50px;
 }
 #section_4 .projet{
     width: 100%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 5px;
 }
 #section_4 img{
     width: 100%;
@@ -638,7 +639,12 @@ footer h3{
     }
 }
 /************************Section 3**********************************/
-
+/************************Section 4*********************************/
+@media screen and (max-width:950px){
+.responsiveProjet{
+    grid-template-columns: 1fr !important;
+}
+}
 /************************Section 5************************************/
 @media screen and (max-width:1200px){
     #section_5 .img {

@@ -176,13 +176,15 @@
     <section id="section_4">
         <div class="cadre">
             <p>Découvrez quelques projets réalisés</p>
-            <div>
+            <div class="responsiveProjet" style="display:grid; grid-template-columns: 1fr 1fr">
                 <?php
                     foreach($projet as $projets){
                 ?>
+                <div style="margin-left: 5px; margin-right: 5px;">
                     <div class="projet" id="projet" onclick="openModal<?php echo $projets['id_Categorie']; ?>()">
                         <img src="img/<?php echo $projets['image']; ?>">
                     </div>
+                </div>
                 <?php
                     }
                 ?>
@@ -194,7 +196,6 @@
             <div class="projet" id="projet3" onclick="openModal3()">
                 <img src="img/enlight.png">
             </div>-->
-        </div>
         <a href="#section_5"><img class="fleche" src="img/fleche.svg" height="50px"></a>
         <a href="#section_5"><img class="fleche2" src="img/fleche.svg" height="50px"></a>
         <a href="#section_5"><img class="fleche3" src="img/fleche.svg" height="50px"></a>

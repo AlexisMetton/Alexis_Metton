@@ -46,29 +46,61 @@ try {
 catch (PDOException $e){
 echo "Erreur : " . $e->getMessage();
 }
+try {
+    $conn = new PDO("mysql:host=$servname;dbname=$dbname",$user, $pass);
 
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $sth = $conn->prepare ("SELECT id_Categorie, nom, image
+                            FROM projets");
+    $sth->execute();
+
+    $projet = $sth->fetchAll(PDO::FETCH_ASSOC);
+}
+catch (PDOException $e){
+    echo "Erreur : " . $e->getMessage();
+}
 ?>     
 
 <?php foreach($administrateur as $administrateurs){ ?>
 <header>
     <nav>   
-        <a href="../index.php"><h1 style="font-size:25px"><?php echo $administrateurs['prenomAdmin'] ?>
-            <span style="color: black;
-                  text-shadow: 1px 1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 
-                  -1px -1px 0 #ffffff, -1px -1px 0 #ffffff;"><?php echo $administrateurs['nomAdmin'] ?> 
-            </span>
-        </h1>
+        <a href="../index.php">
+            <h1 style="font-size:25px"><?php echo $administrateurs['prenomAdmin'] ?>
+            <span><?php echo $administrateurs['nomAdmin'] ?></span>
+            </h1>
         </a>
     <?php 
     } 
     ?>
-        <a class="nav-link text-white" onclick="openModal()" style="cursor:pointer;">
-            Ajouter un projet
-        </a>
         <form action="logout.php" method="post">
             <input type="submit" name="logout" value="Déconnexion" />
         </form>           
     </nav>
 </header>
+<section id="section_1" class="portfolio-experiment">
+    <a href="https://github.com/AlexisMetton/Travelers_Life" target="_blank" style="text-decoration: none;">
+        <span class="text">Ajouter un projet</span>
+        <span class="line -right"></span>
+        <span class="line -top"></span>
+        <span class="line -left"></span>
+        <span class="line -bottom"></span>
+    </a>
+</section>
+<section id="section_2">
+    <div class="cadre">
+            <?php
+                foreach($projet as $projets){
+            ?>
+            <div style="margin-left: 5px; margin-right: 5px;">
+                <div class="projet" id="projet" onclick="openModal<?php echo $projets['id_Categorie']; ?>()">
+                    <img src="../img/<?php echo $projets['image']; ?>">
+                </div>
+            </div>
+            <?php
+                }
+            ?>
+    </div>
+</section>
 </body>
 </html>
