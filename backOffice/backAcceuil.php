@@ -51,7 +51,7 @@ try {
 
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $sth = $conn->prepare ("SELECT id_Categorie, nom, image
+    $sth = $conn->prepare ("SELECT id_Categorie, nom, image1
                             FROM projets");
     $sth->execute();
 
@@ -94,7 +94,7 @@ catch (PDOException $e){
             ?>
             <div style="margin-left: 5px; margin-right: 5px;">
                 <div class="projet" id="projet" onclick="openModal<?php echo $projets['id_Categorie']; ?>()">
-                    <img src="../img/<?php echo $projets['image']; ?>">
+                    <img src="../img/<?php echo $projets['image1']; ?>">
                 </div>
             </div>
             <?php
@@ -109,7 +109,7 @@ catch (PDOException $e){
 <form action="nouveau.php" method="post">
                     <h2 class="text-center" style="color:whitesmoke;margin-top:20px">Ajouter un projet</h2>       
                     <div class="form-group">
-                        <input type="number" name="Numéro du projet" class="form-control" placeholder="*"  min="1" autocomplete="off" required>
+                        <input type="number" name="Numéroduprojet" class="form-control" placeholder="*"  min="1" autocomplete="off" required>
                     </div>
                     <div class="form-group">
                         <input type="text" name="Nom" class="form-control" placeholder="Nom"  autocomplete="off" required>
@@ -123,6 +123,9 @@ catch (PDOException $e){
                     <div class="form-group">
                         <input type="file" name="Image3" class="form-control" placeholder="nomImage3.jpg"  autocomplete="off" required>
                     </div>     
+                    <div class="form-group">
+                        <input type="text" name="Intitulé" class="form-control" placeholder="Titre"  autocomplete="off" required>
+                    </div>
                     <div class="form-group">
                         <textarea cols="33" rows="15" name="Description" class="form-control" maxlength="100000" placeholder="Description"  autocomplete="off" required></textarea>
                     </div>

@@ -3,21 +3,16 @@ session_start();
 $servname = "localhost";
 $user = "root";
 $pass = "";
-$dbname = "enlight_meal";
+$dbname = "alexis_metton";
+$Num = valid_donnees($_POST['Numéroduprojet']);
 $Nom = valid_donnees($_POST['Nom']);
-$Adresse = valid_donnees($_POST['Adresse']);
-$Telephone = valid_donnees($_POST['Telephone']);
-$Etoiles = valid_donnees($_POST['Etoiles']);
-$Images = valid_donnees($_POST['Images']);
-$id_Categorie = valid_donnees($_POST['id_Categorie']);
 $Image1 = valid_donnees($_POST['Image1']);
 $Image2 = valid_donnees($_POST['Image2']);
 $Image3 = valid_donnees($_POST['Image3']);
-$noteService = valid_donnees($_POST['noteService']);
-$noteCuisson = valid_donnees($_POST['noteCuisson']);
-$noteCarte = valid_donnees($_POST['noteCarte']);
-$notePrix = valid_donnees($_POST['notePrix']);
-$Critique = valid_donnees($_POST['Critique']);
+$Intitule = valid_donnees($_POST['Intitulé']);
+$Description = valid_donnees($_POST['Description']);
+$Outils = valid_donnees($_POST['Outils']);
+
 
 function valid_donnees($donnees){
     $donnees = trim($donnees);
@@ -36,8 +31,8 @@ try {
 
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $sth = $conn->prepare ("INSERT INTO restaurant (Nom, Adresse, Telephone, Etoiles, Images, id_Categorie, Image1, Image2, Image3, noteService, noteCuisson, noteCarte, notePrix, Critique)
-                            VALUES ('$Nom', '$Adresse', '$Telephone', $Etoiles, '$Images', $id_Categorie, '$Image1', '$Image2', '$Image3', $noteService, $noteCuisson, $noteCarte, $notePrix, '$Critique')");
+    $sth = $conn->prepare ("INSERT INTO projets (id_Categorie, nom, image1, image2, image3, intitule, description, outils)
+                            VALUES ('$Num', '$Nom', '$Image1', '$Image2', '$Image3', '$Intitule','$Description', '$Outils')");
     $sth->execute();
 
     $_SESSION['ajout'] = 1;

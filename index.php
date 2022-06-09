@@ -29,7 +29,7 @@
 
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-            $sth = $conn->prepare ("SELECT id_Categorie, nom, image
+            $sth = $conn->prepare ("SELECT id_Categorie, nom, image1
                                     FROM projets");
             $sth->execute();
 
@@ -182,7 +182,7 @@
                 ?>
                 <div style="margin-left: 5px; margin-right: 5px;">
                     <div class="projet" id="projet" onclick="openModal<?php echo $projets['id_Categorie']; ?>()">
-                        <img src="img/<?php echo $projets['image']; ?>">
+                        <img src="img/<?php echo $projets['image1']; ?>">
                     </div>
                 </div>
                 <?php
