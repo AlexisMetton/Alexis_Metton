@@ -176,7 +176,7 @@
     <section id="section_4">
         <div class="cadre">
             <p>Découvrez quelques projets réalisés</p>
-            <div style="display:grid; grid-template-columns: 1fr 1fr;">
+            <div>
                 <?php
                     foreach($projet as $projets){
                 ?>
