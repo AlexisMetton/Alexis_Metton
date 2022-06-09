@@ -79,7 +79,7 @@ catch (PDOException $e){
     </nav>
 </header>
 <section id="section_1" class="portfolio-experiment">
-    <a href="https://github.com/AlexisMetton/Travelers_Life" target="_blank" style="text-decoration: none;">
+    <a onclick="popupNouveau()" style="text-decoration: none;">
         <span class="text">Ajouter un projet</span>
         <span class="line -right"></span>
         <span class="line -top"></span>
@@ -102,5 +102,43 @@ catch (PDOException $e){
             ?>
     </div>
 </section>
+<div id="overlay" class="overlay" onclick="closeAvecOverlay()">
+
+</div>
+<div id="popup1">
+<form action="nouveau.php" method="post">
+                    <h2 class="text-center" style="color:whitesmoke;margin-top:20px">Ajouter un projet</h2>       
+                    <div class="form-group">
+                        <input type="number" name="Numéro du projet" class="form-control" placeholder="*"  min="0" autocomplete="off" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="Nom" class="form-control" placeholder="Nom"  autocomplete="off" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="file" name="Image1" class="form-control" placeholder="nomImage1.jpg"  autocomplete="off" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="file" name="Image2" class="form-control" placeholder="nomImage2.jpg"  autocomplete="off" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="file" name="Image3" class="form-control" placeholder="nomImage3.jpg"  autocomplete="off" required>
+                    </div>     
+                    <div class="form-group">
+                        <textarea cols="33" rows="15" name="Critique" class="form-control" maxlength="100000" placeholder="Critique"  autocomplete="off" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <section class="portfolio-experiment">
+                        <a style="text-decoration: none;">
+                            <span class="text"><button type="submit" name="envoi" class="btn btn-primary btn-block">Validez</button></span>
+                            <span class="line -right"></span>
+                            <span class="line -top"></span>
+                            <span class="line -left"></span>
+                            <span class="line -bottom"></span>
+                        </a>
+                        </section>
+                    </div>   
+                </form>     
+</div> 
 </body>
 </html>
+<script src="backJavaScript.js"></script>
