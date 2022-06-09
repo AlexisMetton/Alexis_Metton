@@ -176,15 +176,18 @@
     <section id="section_4">
         <div class="cadre">
             <p>Découvrez quelques projets réalisés</p>
-            <?php
-                foreach($projet as $projets){
-            ?>
-            <div class="projet" id="projet" onclick="openModal1()">
-                <img src="img/<?php echo $projets['image']; ?>">
+            <div style="display:grid; grid-template-columns: 1fr 1fr;">
+                <?php
+                    foreach($projet as $projets){
+                ?>
+                    <div class="projet" id="projet" onclick="openModal<?php echo $projets['id_Categorie']; ?>()">
+                        <img src="img/<?php echo $projets['image']; ?>">
+                    </div>
+                <?php
+                    }
+                ?>
             </div>
-            <?php
-                }
-            ?>
+        </div>
             <!--<div class="projet" id="projet2" onclick="openModal2()">
                 <img src="img/travelers.png">
             </div>
