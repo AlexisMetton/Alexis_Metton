@@ -1284,8 +1284,9 @@ footer h3{
 }
 .login-form form {
     padding: 30px;
-    background-color: rgba(122, 102, 255, 0.555);
+    background-color: rgba(75, 63, 143, 0.555);
     border-radius: 10px;
+    box-shadow: 0 0 10px whitesmoke;
 }
 .login-form h2 {
     color:whitesmoke;
@@ -1320,22 +1321,28 @@ footer h3{
     text-align: center;
     margin-bottom: 2px;
     font-family: 'Inter-Bold';
-    background-color: rgba(122, 102, 255, 0.555);
+    background-color: rgba(75, 63, 143, 0.555);
     border-radius: 10px;
+    box-shadow: 0 0 10px whitesmoke;
+    margin-bottom: 10px;
 }
 #incomplet{
     color: rgb(255, 173, 80);
     text-align: center;
     margin-bottom: 2px;
     font-family: 'Inter-Bold';
-    background-color: rgba(122, 102, 255, 0.555);
+    background-color: rgba(75, 63, 143, 0.555);
     border-radius: 10px;
+    box-shadow: 0 0 10px whitesmoke;
+    margin-bottom: 10px;
 }
 #reussie{
     color: rgb(100, 255, 80);
     text-align: center;
     margin-bottom: 2px;
     font-family: 'Inter-Bold';
-    background-color: rgba(122, 102, 255, 0.555);
+    background-color: rgba(75, 63, 143, 0.555);
     border-radius: 10px;
+    box-shadow: 0 0 10px whitesmoke;
+    margin-bottom: 10px;
 }

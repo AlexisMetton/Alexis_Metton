@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="icon" href="img/Projecteur.png">
+    <link rel="icon" href="img/logo.svg">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +12,12 @@
 <body>
     <header>
         <nav>
-            <a href="#section_2">PROFIL <img class="rond" src="img/rond.svg" height="10px"></a>
-            <a href="#section_3">COMPETENCES <img class="rond" src="img/rond.svg" height="10px"></a>
-            <a href=""><img src=img/logo.svg height="50px" style="padding-top:15px;transform:scale(1.9);"></a>
+            <a href="index.php#section_2">PROFIL <img class="rond" src="img/rond.svg" height="10px"></a>
+            <a href="index.php#section_3">COMPETENCES <img class="rond" src="img/rond.svg" height="10px"></a>
+            <a href="index.php"><img src=img/logo.svg height="50px" style="padding-top:15px;transform:scale(1.9);"></a>
             <!--<a href=""><p><span class="A">A</span><span class="M">M</span></p></a>-->
-            <a href="#section_4">PROJETS <img class="rond" src="img/rond.svg" height="10px"></a>
-            <a href="#section_5">CONTACT <img class="rond" src="img/rond.svg" height="10px"></a>
+            <a href="index.php#section_4">PROJETS <img class="rond" src="img/rond.svg" height="10px"></a>
+            <a href="index.php#section_5">CONTACT <img class="rond" src="img/rond.svg" height="10px"></a>
             <img id="burger" class="burger" src="img/burger.svg" height="30px" onclick="menu()">
             <img id="croix" style="display: none;" class="croix" src="img/croix.svg" height="30px" onclick="menu1()">
         </nav>
