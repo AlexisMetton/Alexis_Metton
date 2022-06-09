@@ -18,6 +18,27 @@
     <?php
         }
     ?>
+    <?php
+        $servname = "localhost";
+        $user = "root";
+        $pass = "";
+        $dbname = "alexis_metton";
+
+        try {
+            $conn = new PDO("mysql:host=$servname;dbname=$dbname",$user, $pass);
+
+            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+            $sth = $conn->prepare ("SELECT id_Categorie, nom, image
+                                    FROM projets");
+            $sth->execute();
+
+            $projet = $sth->fetchAll(PDO::FETCH_ASSOC);
+        }
+        catch (PDOException $e){
+            echo "Erreur : " . $e->getMessage();
+        }
+    ?>
     <header>
         <nav>
             <a href="#section_2">PROFIL <img class="rond" src="img/rond.svg" height="10px"></a>
@@ -155,15 +176,21 @@
     <section id="section_4">
         <div class="cadre">
             <p>Découvrez quelques projets réalisés</p>
-            <div class="projet" id="projet1" onclick="openModal1()">
-                <img src="img/jadoo.png">
+            <?php
+                foreach($projet as $projets){
+            ?>
+            <div class="projet" id="projet" onclick="openModal1()">
+                <img src="img/<?php echo $projets['image']; ?>">
             </div>
-            <div class="projet" id="projet2" onclick="openModal2()">
+            <?php
+                }
+            ?>
+            <!--<div class="projet" id="projet2" onclick="openModal2()">
                 <img src="img/travelers.png">
             </div>
             <div class="projet" id="projet3" onclick="openModal3()">
                 <img src="img/enlight.png">
-            </div>
+            </div>-->
         </div>
         <a href="#section_5"><img class="fleche" src="img/fleche.svg" height="50px"></a>
         <a href="#section_5"><img class="fleche2" src="img/fleche.svg" height="50px"></a>
