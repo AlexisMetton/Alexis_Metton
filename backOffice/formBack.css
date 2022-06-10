@@ -235,7 +235,7 @@ nav form{
     margin-bottom: 10px;
     text-shadow: 0 0 5px rgb(75, 63, 143);
 }
-/**************************Popup nouveau******************/
+/**************************Popup******************/
 #popup{
     top: 0;
     left: 17%;
@@ -250,94 +250,68 @@ nav form{
     overflow-y: scroll;
     overflow-x:hidden;
     max-height: 80%;
+    text-align: center;
     /*display: none;*/
 }
 ::-webkit-scrollbar {
     display: none;
 }
-#popup .imageRestau1{
-    border-radius: 10px 10px 0 0;
-    width: 100%;
-    transform: translateX(0%);
-    transition: 250ms;
-    z-index: 1;
-    animation-duration: 11s;
-    animation-name: carrousel1;
-    animation-iteration-count: infinite;
-    transition: none;
-}
-#popup .imageRestau2{
-    border-radius: 10px 10px 0 0;
-    width: 100%;
-    position: absolute;
-    transform: translateX(100%);
-    transition: 250ms;
-    animation-duration: 11s;
-    animation-name: carrousel2;
-    animation-iteration-count: infinite;
-    transition: none;
-}
-#popup .imageRestau3{
-    border-radius: 10px 10px 0 0;
-    position: absolute;
-    width: 100%;
-    transform: translateX(200%);
-    transition: 250ms;
-    animation-duration: 11s;
-    animation-name: carrousel3;
-    animation-iteration-count: infinite;
-    transition: none;
-}
-#popup h3{
-    margin-top: 20px;
-    color: whitesmoke;
-    text-align: center;
-}
-#popup h1{
-    color: whitesmoke;
-    text-align: center;
-    font-size: 60px;
-    margin-bottom: 30px;
-}
-#popup p span{
-    color: rgba(123, 102, 255);
-    text-align: center;
-    padding-right: 20px;
-}
-#popup p{
-    color: whitesmoke;
-    text-align: center;
-    text-align: left;
-    text-align: center;
-    line-height: 30px;
-}
-#popup .utilisation{
-    text-align: center;
-}
-#popup .liens{
-    text-align: center;
-}
-#popup .utilisation button{
-    background-color: rgb(123, 102, 255);
-    border-radius: 5px;
+#popup form button{
+    background-color: transparent;
     border-style: none;
-    padding: 5px;
+    color: whitesmoke;
+    font-size: 20px;
+    cursor:pointer;
+}
+#popup1 form{
+    text-align: center;
+}
+#popup .form-group{
+    width: 100%;
     margin-bottom: 5px;
 }
-#popup .utilisation button:hover{
-    animation-duration: .5s;
-    animation-name: saut;
-    animation-iteration-count: infinite;
-    transition: none;
+#popup .form-group input{
+    width: 80%;
+    border-style: solid;
+    border-color: whitesmoke;
+    height: 40px;
+    border-radius:5px;
+    background-color: rgb(27, 27, 27);
+    box-shadow: 0 0 5px rgb(75, 63, 143);
+    color: whitesmoke;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-width: 1px;
 }
-#popup .liens button{
-    background-color: transparent;
-    padding: 10px;
-    color: rgb(123, 102, 255);
-    border-color: rgb(123, 102, 255);
+#popup .form-group textarea{
+    width: 80%;
+    border-style: solid;
+    border-color: whitesmoke;
+    border-radius:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(27, 27, 27);
+    box-shadow: 0 0 5px rgb(75, 63, 143);
+    color: whitesmoke;
+    resize: vertical;
+    padding-top: 10px;
 }
-#popup .liens button:hover{
-    background-color: rgb(123, 102, 255);
-    color: rgb(27, 27, 27);
-    transition: 250ms;
+#popup h2{
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px rgb(75, 63, 143);
+}
+#popup .file{
+    color:whitesmoke;
+    border-style: solid;
+    border-color: whitesmoke;
+    text-align: center;
+    width: 80px;
+    border-width: 1px;
+    border-radius: 10px;
+    cursor:pointer;
+    margin-left: 10%;
+}
+#popup .file:hover{
+    color:black;
+    background-color: whitesmoke;
 }
