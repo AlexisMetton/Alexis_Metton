@@ -181,7 +181,7 @@
                     foreach($projet as $projets){
                 ?>
                 <div style="margin-left: 5px; margin-right: 5px;">
-                    <div class="projet" id="projet" onclick="openModal<?php echo $projets['id_Categorie']; ?>()">
+                    <div class="projet" id="projet" onclick="openModal4()">
                         <img src="img/<?php echo $projets['image1']; ?>">
                     </div>
                 </div>
@@ -366,6 +366,8 @@
         </a>
       </section>
     </div> 
+    <div id="popup4">
+    </div>
 </body>
 </html>
 <script src="JavaScript/JavaScipt.js"></script>

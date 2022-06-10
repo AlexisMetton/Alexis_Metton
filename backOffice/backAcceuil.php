@@ -131,8 +131,8 @@ catch (PDOException $e){
                 foreach($projet as $projets){
             ?>
             <div style="margin-left: 5px; margin-right: 5px;">
-            <a onclick="return confirm('Voulez-vous vraiment supprimer ce restaurant ?');" class="croix" style="float:right" href="supprimer.php?nom=<?php echo $projets['nom']; ?>">
-                <button style="color:whitesmoke; background-color:transparent; border-color:whitesmoke">&times;</button>
+            <a onclick="return confirm('Voulez-vous vraiment supprimer ce restaurant ?');" class="croix" style="float:right;margin-right:10px;margin-bottom: 2px" href="supprimer.php?nom=<?php echo $projets['nom']; ?>">
+                <button style="color:whitesmoke; background-color:transparent; border-color:whitesmoke;padding:5px;border-radius:5px">&times;</button>
             </a>
                 <div class="projet" id="projet" onclick="openModal<?php echo $projets['id_Categorie']; ?>()">
                     <img src="../img/<?php echo $projets['image1']; ?>">

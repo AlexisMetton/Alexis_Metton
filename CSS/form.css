@@ -763,19 +763,25 @@ footer h3{
     max-height: 80%;
     /*display: none;*/
 }
+#popup4{
+    top: 0;
+    left: 17%;
+    margin: 10vh auto;
+    position: fixed;
+    width:65%;
+    background-color: rgba(27, 27, 27, 0.800);
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px 10px rgba(245, 245, 245, 0.24);
+    z-index: -2;
+    opacity: 0;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    max-height: 80%;
+    /*display: none;*/
+}
 ::-webkit-scrollbar {
     display: none;
     }
-.btnClose{
-    float: right;
-    cursor: pointer;
-    color: whitesmoke;
-    right: 10px;
-    top: 10px;
-    position: sticky;
-    z-index: 2;
-    color: white;
-}
 #popup1 .imageRestau1{
     border-radius: 10px 10px 0 0;
     width: 100%;
@@ -865,6 +871,39 @@ footer h3{
     transition: none;
 }
 #popup3 .imageRestau3{
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    width: 100%;
+    transform: translateX(200%);
+    transition: 250ms;
+    animation-duration: 11s;
+    animation-name: carrousel3;
+    animation-iteration-count: infinite;
+    transition: none;
+}
+#popup4 .imageRestau1{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    transform: translateX(0%);
+    transition: 250ms;
+    z-index: 1;
+    animation-duration: 11s;
+    animation-name: carrousel1;
+    animation-iteration-count: infinite;
+    transition: none;
+}
+#popup4 .imageRestau2{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    position: absolute;
+    transform: translateX(100%);
+    transition: 250ms;
+    animation-duration: 11s;
+    animation-name: carrousel2;
+    animation-iteration-count: infinite;
+    transition: none;
+}
+#popup4 .imageRestau3{
     border-radius: 10px 10px 0 0;
     position: absolute;
     width: 100%;
@@ -1035,6 +1074,60 @@ footer h3{
 #popup3 .liens button:hover{
     background-color: rgb(123, 102, 255);
     color: black;
+    transition: 250ms;
+}
+
+#popup4 h3{
+    margin-top: 20px;
+    color: whitesmoke;
+    text-align: center;
+}
+#popup4 h1{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+#popup4 p span{
+    color: rgba(123, 102, 255);
+    text-align: center;
+    padding-right: 20px;
+}
+#popup4 p{
+    color: whitesmoke;
+    text-align: center;
+    text-align: left;
+    text-align: center;
+    line-height: 30px;
+}
+#popup4 .utilisation{
+    text-align: center;
+}
+#popup4 .liens{
+    text-align: center;
+}
+#popup4 .utilisation button{
+    background-color: rgb(123, 102, 255);
+    border-radius: 5px;
+    border-style: none;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+#popup4 .utilisation button:hover{
+    animation-duration: .5s;
+    animation-name: saut;
+    animation-iteration-count: infinite;
+    transition: none;
+}
+#popup4 .liens button{
+    background-color: transparent;
+    padding: 10px;
+    color: rgb(123, 102, 255);
+    border-color: rgb(123, 102, 255);
+}
+#popup4 .liens button:hover{
+    background-color: rgb(123, 102, 255);
+    color: rgb(27, 27, 27);
     transition: 250ms;
 }
 /****************************flou**************************/

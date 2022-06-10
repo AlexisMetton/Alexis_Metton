@@ -191,6 +191,7 @@ nav form{
     border-style: none;
     color: whitesmoke;
     font-size: 20px;
+    cursor:pointer;
 }
 #popup1 form{
     text-align: center;
@@ -228,4 +229,8 @@ nav form{
 #popup1 h2{
     margin-bottom: 10px;
     text-shadow: 0 0 5px rgb(75, 63, 143);
+}
+.croix:hover{
+    background-color:rgb(143, 63, 63);
+    border-radius: 5px;
 }
