@@ -134,8 +134,8 @@ catch (PDOException $e){
             <a onclick="return confirm('Voulez-vous vraiment supprimer ce restaurant ?');" class="croix" style="float:right;margin-right:10px;margin-bottom: 2px" href="supprimer.php?nom=<?php echo $projets['nom']; ?>">
                 <button style="color:whitesmoke; background-color:transparent; border-color:whitesmoke;padding:5px;border-radius:5px">&times;</button>
             </a>
-                <div class="projet" id="projet" onclick="openModal<?php echo $projets['id_Categorie']; ?>()">
-                    <img src="../img/<?php echo $projets['image1']; ?>">
+                <div class="projet" id="projet">
+                    <img src="../img/<?php echo $projets['image1']; ?>" id="<?php echo $projets['nom']; ?>" onclick="openModal(event)">
                 </div>
             </div>
             <?php
@@ -186,6 +186,9 @@ catch (PDOException $e){
                     </div>   
                 </form>     
 </div> 
+<div id="popup">
+
+</div>
 </body>
 </html>
 <script src="backJavaScript.js"></script>
