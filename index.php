@@ -182,7 +182,7 @@
                 ?>
                 <div style="margin-left: 5px; margin-right: 5px;">
                     <div class="projet" id="projet">
-                        <img src="img/<?php echo $projets['image1']; ?>" id="<?php echo $projets['nom']; ?>" onclick="openModal4(event)">
+                        <img src="img/<?php echo $projets['image1']; ?>" id="<?php echo $projets['nom']; ?>" onclick="openModal(event)">
                     </div>
                 </div>
                 <?php
@@ -252,121 +252,8 @@
     <div id="overlay" class="overlay" onclick="closeAvecOverlay()">
 
     </div>
-    <div id="popup1">
-        <!--<span onclick="closeModal1()" id="btnClose" class="btnClose">&times;</span>-->
-        <img class="imageRestau1" id="imageRestau1" src="img/jadoo.png">
-        </img>
-        <!--<div class="gauche" id="gauche" src="img/jadoo.png">
-            <img src="img/droite.png" height="30px">
-        </div>-->
-        <img class="imageRestau2" id="imageRestau2" src="img/jadoo2.png">
-        </img>
-        <img class="imageRestau3" id="imageRestau3" src="img/jadoo3.png">
-        </img>
-        <h3>Site Web</h3>
-        <h1>Jadoo</h1>
-        <p style="margin-bottom: 10px;">
-            <span>•</span>Intégration HTML - CSS
-            <br><span>•</span>Site web responsive
-            <br><span>•</span>Réalisation d'animations - keyframes
-            <br><span>•</span>Base de donnée SQL - PHPmyAdmin
-            <br><span>•</span>Communication avec la base de donnée en PHP
-        </p>
-        <div class="utilisation" style="margin-bottom:10px">
-            <button>HTML</button>
-            <button>CSS</button>
-            <button>PHP</button>
-            <button>MySQL</button>
-        </div>
-        <section class="portfolio-experiment">
-        <a href="https://github.com/AlexisMetton/Jadoo" target="_blank" style="text-decoration: none;">
-          <span class="text"><img src="img/github.png" height="16px" style="margin-right: 5px;">Git Hub</span>
-          <span class="line -right"></span>
-          <span class="line -top"></span>
-          <span class="line -left"></span>
-          <span class="line -bottom"></span>
-        </a>
-      </section>
-    </div> 
-    <div id="popup2">
-        <img class="imageRestau1" id="imageRestau1" src="img/travelers.PNG">
-        </img>
-        <!--<div class="gauche" id="gauche" src="img/jadoo.png">
-            <img src="img/droite.png" height="30px">
-        </div>-->
-        <img class="imageRestau2" id="imageRestau2" src="img/travelers2.PNG">
-        </img>
-        <img class="imageRestau3" id="imageRestau3" src="img/travelers3.PNG">
-        </img>
-        <h3>Site Web</h3>
-        <h1>Traveler's Life</h1>
-        <p style="margin-bottom: 10px;">
-            <span>•</span>Création d'une maquette sur Paint
-            <br><span>•</span>Intégration HTML - CSS
-            <br><span>•</span>Site web responsive
-            <br><span>•</span>Réalisation d'animations - keyframes
-            <br><span>•</span>Création d'intéractions avec JavaScript
-        </p>
-        <div class="utilisation" style="margin-bottom:10px">
-            <button>HTML</button>
-            <button>CSS</button>
-            <button>JavaScript</button>
-            <button>Paint</button>
-        </div>
-        <section class="portfolio-experiment">
-        <a href="https://github.com/AlexisMetton/Travelers_Life" target="_blank" style="text-decoration: none;">
-          <span class="text"><img src="img/github.png" height="16px" style="margin-right: 5px;">Git Hub</span>
-          <span class="line -right"></span>
-          <span class="line -top"></span>
-          <span class="line -left"></span>
-          <span class="line -bottom"></span>
-        </a>
-      </section>
-    </div> 
-    <div id="popup3">
-        <img class="imageRestau1" id="imageRestau1" src="img/enlight.PNG">
-        </img>
-    <!--<div class="gauche" id="gauche" src="img/jadoo.png">
-        <img src="img/droite.png" height="30px">
-    </div>-->
-    <img class="imageRestau2" id="imageRestau2" src="img/enlight2.PNG">
-    </img>
-    <img class="imageRestau3" id="imageRestau3" src="img/enlight3.PNG">
-    </img>
-    <h3>Site Web</h3>
-    <h1>Enlight Meal</h1>
-    <p style="margin-bottom: 10px;">
-        <span>•</span>Création d'une maquette sur Figma
-        <br><span>•</span>Intégration HTML - CSS
-        <br><span>•</span>Site web responsive
-        <br><span>•</span>Réalisation d'animations - keyframes
-        <br><span>•</span>Création d'intéractions avec JavaScript
-        <br><span>•</span>Système de login utilisateur
-        <br><span>•</span>Base de donnée SQL - PHPmyAdmin
-        <br><span>•</span>Communication avec la base de donnée en PHP
-        <br><span>•</span>Génération du contenu et messages utilisateur avec PHP/Javascript/Ajax
-    </p>
-    <div class="utilisation" style="margin-bottom:10px">
-        <button>HTML</button>
-        <button>CSS</button>
-        <button>Javascript</button>
-        <button>PHP</button>
-        <button>MySql</button>
-        <button>Ajax</button>
-        <button>Bootstrap</button>
-        <button>Figma</button>
-    </div>
-    <section class="portfolio-experiment">
-        <a href="https://github.com/AlexisMetton/Enlight-Meal" target="_blank" style="text-decoration: none;">
-          <span class="text"><img src="img/github.png" height="16px" style="margin-right: 5px;">Git Hub</span>
-          <span class="line -right"></span>
-          <span class="line -top"></span>
-          <span class="line -left"></span>
-          <span class="line -bottom"></span>
-        </a>
-      </section>
-    </div> 
-    <div id="popup4">
+    <div id="popup">
+
     </div>
 </body>
 </html>

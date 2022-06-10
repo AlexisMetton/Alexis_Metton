@@ -129,78 +129,13 @@ function scrollFunction() {
   }
 }
 
-
-function openModal1(){    
-    document.getElementById('overlay').style.opacity = "1";
-    document.getElementById('popup1').style.opacity = "1";
-    document.getElementById('overlay').style.zIndex = "102";
-    document.getElementById('popup1').style.zIndex = "110";
-    document.getElementById('overlay').style.transition = "500ms";
-    document.getElementById('popup1').style.transition = "500ms"; 
-}
-function openModal2(){    
-    document.getElementById('overlay').style.opacity = "1";
-    document.getElementById('popup2').style.opacity = "1";
-    document.getElementById('overlay').style.zIndex = "102";
-    document.getElementById('popup2').style.zIndex = "110";
-    document.getElementById('overlay').style.transition = "500ms";
-    document.getElementById('popup2').style.transition = "500ms"; 
-}
-function openModal3(){    
-    document.getElementById('overlay').style.opacity = "1";
-    document.getElementById('popup3').style.opacity = "1";
-    document.getElementById('overlay').style.zIndex = "102";
-    document.getElementById('popup3').style.zIndex = "110";
-    document.getElementById('overlay').style.transition = "500ms";
-    document.getElementById('popup3').style.transition = "500ms"; 
-}
-
-
-
-/*function closeModal1(){
-    document.getElementById('overlay').style.opacity = "0";
-    document.getElementById('popup1').style.opacity = "0";
-    document.getElementById('overlay').style.zIndex = "-1";
-    document.getElementById('popup1').style.zIndex = "-2";
-    document.getElementById('overlay').style.transition = "500ms";
-    document.getElementById('popup1').style.transition = "500ms";
-}
-function closeModal2(){
-    document.getElementById('overlay').style.opacity = "0";
-    document.getElementById('popup2').style.opacity = "0";
-    document.getElementById('overlay').style.zIndex = "-1";
-    document.getElementById('popup2').style.zIndex = "-2";
-    document.getElementById('overlay').style.transition = "500ms";
-    document.getElementById('popup2').style.transition = "500ms";
-}
-function closeModal3(){
-    document.getElementById('overlay').style.opacity = "0";
-    document.getElementById('popup3').style.opacity = "0";
-    document.getElementById('overlay').style.zIndex = "-1";
-    document.getElementById('popup3').style.zIndex = "-2";
-    document.getElementById('overlay').style.transition = "500ms";
-    document.getElementById('popup3').style.transition = "500ms";
-}*/
-
 function closeAvecOverlay(){
     document.getElementById('overlay').style.opacity = "0";
-    document.getElementById('popup1').style.opacity = "0";
     document.getElementById('overlay').style.zIndex = "-1";
-    document.getElementById('popup1').style.zIndex = "-2";
     document.getElementById('overlay').style.transition = "500ms";
-    document.getElementById('popup1').style.transition = "500ms";
-
-    document.getElementById('popup2').style.opacity = "0";
-    document.getElementById('popup2').style.zIndex = "-2";
-    document.getElementById('popup2').style.transition = "500ms";
-
-    document.getElementById('popup3').style.opacity = "0";
-    document.getElementById('popup3').style.zIndex = "-2";
-    document.getElementById('popup3').style.transition = "500ms";
-
-    document.getElementById('popup4').style.opacity = "0";
-    document.getElementById('popup4').style.zIndex = "-2";
-    document.getElementById('popup4').style.transition = "500ms";
+    document.getElementById('popup').style.opacity = "0";
+    document.getElementById('popup').style.zIndex = "-2";
+    document.getElementById('popup').style.transition = "500ms";
 }
 
 
@@ -320,7 +255,7 @@ function fetch_post(url, dataArray) {
 }
 
 
-function openModal4(e){    
+function openModal(e){    
   let idd=e.target.id;
   console.log(idd);
   const json_data = JSON.stringify({
@@ -332,14 +267,14 @@ function openModal4(e){
   fetch_post('données.php', dataArray).then(function(response) {
       let infos = JSON.parse(response);
   document.getElementById('overlay').style.opacity = "1";
-  document.getElementById('popup4').style.opacity = "1";
+  document.getElementById('popup').style.opacity = "1";
   document.getElementById('overlay').style.zIndex = "102";
-  document.getElementById('popup4').style.zIndex = "110";
+  document.getElementById('popup').style.zIndex = "110";
   document.getElementById('overlay').style.transition = "500ms";
-  document.getElementById('popup4').style.transition = "500ms"; 
+  document.getElementById('popup').style.transition = "500ms"; 
 
-  document.getElementById('popup4').innerHTML ='';    
-  document.getElementById('popup4').innerHTML += 
+  document.getElementById('popup').innerHTML ='';    
+  document.getElementById('popup').innerHTML += 
   `<img class="imageRestau1" id="imageRestau1" src="img/`+ infos[0]['image1'] +`">
   </img>
 <img class="imageRestau2" id="imageRestau2" src="img/`+ infos[0]['image2'] +`">
