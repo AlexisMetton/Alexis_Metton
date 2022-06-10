@@ -29,7 +29,7 @@
 
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-            $sth = $conn->prepare ("SELECT id_Categorie, nom, image1
+            $sth = $conn->prepare ("SELECT id_Categorie, nom, image1, affichage
                                     FROM projets");
             $sth->execute();
 
@@ -179,6 +179,7 @@
             <div class="responsiveProjet" style="display:grid; grid-template-columns: 1fr 1fr">
                 <?php
                     foreach($projet as $projets){
+                        if($projets['affichage'] == 1){
                 ?>
                 <div style="margin-left: 5px; margin-right: 5px;">
                     <div class="projet" id="projet">
@@ -186,7 +187,7 @@
                     </div>
                 </div>
                 <?php
-                    }
+                    }}
                 ?>
             </div>
         </div>
