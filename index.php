@@ -181,8 +181,8 @@
                     foreach($projet as $projets){
                 ?>
                 <div style="margin-left: 5px; margin-right: 5px;">
-                    <div class="projet" id="projet" onclick="openModal4()">
-                        <img src="img/<?php echo $projets['image1']; ?>">
+                    <div class="projet" id="projet">
+                        <img src="img/<?php echo $projets['image1']; ?>" id="<?php echo $projets['nom']; ?>" onclick="openModal4(event)">
                     </div>
                 </div>
                 <?php
