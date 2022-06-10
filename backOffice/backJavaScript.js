@@ -96,19 +96,19 @@ function openModal(e){
     <input type="text" name="Nom" class="form-control" placeholder="Nom"  autocomplete="off" value="`+ infos[0]['nom'] +`" required>
 </div>
 <div class="form-group">
-    <input id="ImagesLiens" type="text" name="Image" class="form-control" placeholder="nomImage1.jpg"  autocomplete="off" value="`+ infos[0]['image1'] +`" required>
+    <input id="ImagesLiens" type="text" name="Image" class="form-control" placeholder="nomImage1.jpg"  autocomplete="off" value="`+ infos[0]['image1'] +`">
     <input style="display:none;margin-left:10%;" id="ImagesChargement" type="file" name="Imagebis" class="form-control" placeholder="nomImage.jpg"  autocomplete="off" value="`+ infos[0]['image1'] +`">
     <div onclick="chargementImage()" id="FileIm" class="file">File</div>
     <div style="display:none" onclick="chargementLiens()" class="file" id="FileLi">Liens</div>
 </div>
 <div class="form-group">
-    <input id="ImagesLiens1" type="text" name="Image1" class="form-control" placeholder="nomImage2.jpg"  autocomplete="off" value="`+ infos[0]['image2'] +`" required>
+    <input id="ImagesLiens1" type="text" name="Image1" class="form-control" placeholder="nomImage2.jpg"  autocomplete="off" value="`+ infos[0]['image2'] +`">
     <input style="display:none;margin-left:10%;" id="ImagesChargement1" type="file" name="Image1bis" class="form-control" placeholder="nomImage.jpg"  autocomplete="off" value="`+ infos[0]['image2'] +`">
     <div onclick="chargementImage1()" id="FileIm1" class="file">File</div>
     <div style="display:none" onclick="chargementLiens1()" class="file" id="FileLi1">Liens</div>
 </div>
 <div class="form-group">
-    <input id="ImagesLiens2" type="text" name="Image2" class="form-control" placeholder="nomImage3.jpg"  autocomplete="off" value="`+ infos[0]['image3'] +`" required>
+    <input id="ImagesLiens2" type="text" name="Image2" class="form-control" placeholder="nomImage3.jpg"  autocomplete="off" value="`+ infos[0]['image3'] +`">
     <input style="display:none;margin-left:10%;" id="ImagesChargement2" type="file" name="Image2bis" class="form-control" placeholder="nomImage.jpg"  autocomplete="off" value="`+ infos[0]['image3'] +`">
     <div onclick="chargementImage2()" id="FileIm2" class="file">File</div>
     <div style="display:none" onclick="chargementLiens2()" class="file" id="FileLi2">Liens</div>
