@@ -13,6 +13,7 @@ $Intitule = valid_donnees($_POST['Intitulé']);
 $Description = valid_donnees($_POST['Description']);
 $Outils = valid_donnees($_POST['Outils']);
 $Liens = valid_donnees($_POST['liens']);
+$Affichage = valid_donnees($_POST['affichage']);
 
 function valid_donnees($donnees){
     $donnees = trim($donnees);
@@ -31,8 +32,8 @@ try {
 
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $sth = $conn->prepare ("INSERT INTO projets (id_Categorie, nom, image1, image2, image3, intitule, description, outils, liens)
-                            VALUES ('$Num', '$Nom', '$Image', '$Image1', '$Image2', '$Intitule','$Description', '$Outils', '$Liens')");
+    $sth = $conn->prepare ("INSERT INTO projets (id_Categorie, nom, image1, image2, image3, intitule, description, outils, liens, affichage)
+                            VALUES ('$Num', '$Nom', '$Image', '$Image1', '$Image2', '$Intitule','$Description', '$Outils', '$Liens', '$Affichage')");
     $sth->execute();
 
     $_SESSION['ajout'] = 1;

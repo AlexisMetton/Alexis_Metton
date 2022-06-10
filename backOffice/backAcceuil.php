@@ -177,6 +177,9 @@ catch (PDOException $e){
                         <input type="text" name="liens" class="form-control" placeholder="Liens"  autocomplete="off" required>
                     </div>
                     <div class="form-group">
+                        <input type="number" name="affichage" class="form-control" placeholder="0 (cacher) ou 1 (visible)" min="0" max="1" autocomplete="off" required>
+                    </div>
+                    <div class="form-group">
                         <section class="portfolio-experiment">
                         <a style="text-decoration: none;">
                             <span class="text"><button type="submit" name="envoi">Validez</button></span>
