@@ -74,7 +74,7 @@ catch (PDOException $e){
     } 
     ?>
         <form action="logout.php" method="post">
-            <input type="submit" name="logout" value="Déconnexion" />
+            <input type="submit" name="logout" value="Déconnexion" style="cursor:pointer;"/>
         </form>           
     </nav>
 </header>
@@ -132,10 +132,10 @@ catch (PDOException $e){
             ?>
             <div style="margin-left: 5px; margin-right: 5px;">
             <a onclick="return confirm('Voulez-vous vraiment supprimer ce restaurant ?');" class="croix" style="float:right;margin-right:10px;margin-bottom: 2px" href="supprimer.php?nom=<?php echo $projets['nom']; ?>">
-                <button style="color:whitesmoke; background-color:transparent; border-color:whitesmoke;padding:5px;border-radius:5px">&times;</button>
+                <button style="color:whitesmoke; background-color:transparent; border-color:whitesmoke;padding:5px;border-radius:5px;cursor:pointer;">&times;</button>
             </a>
                 <div class="projet" id="projet">
-                    <img src="../img/<?php echo $projets['image1']; ?>" id="<?php echo $projets['nom']; ?>" onclick="openModal(event)">
+                    <img src="../img/<?php echo $projets['image1']; ?>" id="<?php echo $projets['nom']; ?>" onclick="openModal(event)" style="cursor:pointer;">
                 </div>
             </div>
             <?php
