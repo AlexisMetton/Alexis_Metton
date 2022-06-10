@@ -87,6 +87,44 @@ catch (PDOException $e){
         <span class="line -bottom"></span>
     </a>
 </section>
+<?php
+             $servname = "localhost";
+             $user = "root";
+             $pass = "";
+             $dbname = "enlight_meal";
+            
+            try{
+                if(isset($_SESSION['ajout'])){
+                    $ajout = "*Nouveau restaurant bien créé";
+                    echo "<div id='ajout' style='color: #2a7a1f;
+                    text-align: center;
+                    margin-bottom: 2px;
+                    font-family: 'Inter-Bold';'>" .$ajout ."</div>";
+                    unset($_SESSION['ajout']);
+                }
+                
+                if(isset($_SESSION['suppression'])){
+                    $suppression = "*Restaurant bien supprimé";
+                    echo "<div id='suppression' style='color: rgb(255, 88, 88);
+                    text-align: center;
+                    margin-bottom: 2px;
+                    font-family: 'Inter-Bold';'>" .$suppression ."</div>";
+                    unset($_SESSION['suppression']);
+                }
+
+                if(isset($_SESSION['modif'])){
+                    $modif = "*Modification bien prise en compte";
+                    echo "<div id='modif' style='color: rgb(255, 173, 80);
+                    text-align: center;
+                    margin-bottom: 2px;
+                    font-family: 'Inter-Bold';'>" .$modif ."</div>";
+                    unset($_SESSION['modif']);
+                }
+            } 
+            catch (PDOException $e){
+                echo "Erreur : " . $e->getMessage();
+            }
+            ?>
 <section id="section_2">
     <div class="cadre">
             <?php
