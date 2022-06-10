@@ -130,13 +130,13 @@ function openModal(e){
 </div>
 <div class="form-group">
     <section class="portfolio-experiment">
-    <a style="text-decoration: none;">
-        <span class="text"><button id="`+ infos[0]['nom'] +`" type="submit" name="envoi" onclick="formulaire(event)">Validez</button></span>
+    <button id="`+ infos[0]['nom'] +`" type="submit" name="envoi" onclick="formulaire(event)" style="margin-top:10px">
+        <span class="text">Validez</span>
         <span class="line -right"></span>
         <span class="line -top"></span>
         <span class="line -left"></span>
         <span class="line -bottom"></span>
-    </a>
+        </button>
     </section>
 </div>   
 </form>    `

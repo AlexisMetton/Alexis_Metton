@@ -181,13 +181,13 @@ catch (PDOException $e){
                     </div>
                     <div class="form-group">
                         <section class="portfolio-experiment">
-                        <a style="text-decoration: none;">
-                            <span class="text"><button type="submit" name="envoi">Validez</button></span>
+                        <button style="margin-top:10px" type="submit" name="envoi">
+                            <span class="text">Validez</span>
                             <span class="line -right"></span>
                             <span class="line -top"></span>
                             <span class="line -left"></span>
                             <span class="line -bottom"></span>
-                        </a>
+                        </button>
                         </section>
                     </div>   
                 </form>     
