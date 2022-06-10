@@ -179,7 +179,7 @@ catch (PDOException $e){
                     <div class="form-group">
                         <section class="portfolio-experiment">
                         <a style="text-decoration: none;">
-                            <span class="text"><button type="submit" name="envoi" onclick="formulaire(event)">Validez</button></span>
+                            <span class="text"><button type="submit" name="envoi">Validez</button></span>
                             <span class="line -right"></span>
                             <span class="line -top"></span>
                             <span class="line -left"></span>

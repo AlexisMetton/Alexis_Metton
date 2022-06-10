@@ -65,6 +65,9 @@ function createCookie(name,value, days){
 }
 
 function openModal(e){
+    createCookie("fileImage", "image", -1);
+    createCookie("fileImage1", "image1", -1);
+    createCookie("fileImage2", "image2", -1);
   let nom=e.target.id;
   console.log(nom);
   const json_data = JSON.stringify({
@@ -125,7 +128,7 @@ function openModal(e){
 <div class="form-group">
     <section class="portfolio-experiment">
     <a style="text-decoration: none;">
-        <span class="text"><button type="submit" name="envoi">Validez</button></span>
+        <span class="text"><button id="`+ infos[0]['nom'] +`" type="submit" name="envoi" onclick="formulaire(event)">Validez</button></span>
         <span class="line -right"></span>
         <span class="line -top"></span>
         <span class="line -left"></span>
