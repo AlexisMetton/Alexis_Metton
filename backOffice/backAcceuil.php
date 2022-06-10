@@ -156,13 +156,13 @@ catch (PDOException $e){
                         <input type="text" name="Nom" class="form-control" placeholder="Nom"  autocomplete="off" required>
                     </div>
                     <div class="form-group">
-                        <input type="file" name="Image1" class="form-control" placeholder="nomImage1.jpg"  autocomplete="off" required>
+                        <input type="file" name="Image" class="form-control" placeholder="nomImage1.jpg"  autocomplete="off" required>
                     </div>
                     <div class="form-group">
-                        <input type="file" name="Image2" class="form-control" placeholder="nomImage2.jpg"  autocomplete="off" required>
+                        <input type="file" name="Image1" class="form-control" placeholder="nomImage2.jpg"  autocomplete="off" required>
                     </div>
                     <div class="form-group">
-                        <input type="file" name="Image3" class="form-control" placeholder="nomImage3.jpg"  autocomplete="off" required>
+                        <input type="file" name="Image2" class="form-control" placeholder="nomImage3.jpg"  autocomplete="off" required>
                     </div>     
                     <div class="form-group">
                         <input type="text" name="Intitulé" class="form-control" placeholder="Titre"  autocomplete="off" required>
@@ -172,6 +172,9 @@ catch (PDOException $e){
                     </div>
                     <div class="form-group">
                         <textarea cols="33" rows="15" name="Outils" class="form-control" maxlength="100000" placeholder="Outils"  autocomplete="off" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="liens" class="form-control" placeholder="Liens"  autocomplete="off" required>
                     </div>
                     <div class="form-group">
                         <section class="portfolio-experiment">

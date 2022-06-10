@@ -24,6 +24,7 @@ function formulaire(e){
     let rest=e.target.id;
 
     createCookie("nomProjet", rest, 10);
+    console.log(rest);
 }
 /********************************Ajax*****************************/
 function data(data) {
@@ -47,8 +48,23 @@ function fetch_post(url, dataArray) {
         .catch((error) => console.error("Error:", error));
 }
 
+function createCookie(name,value, days){
+    var expires;
+  
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toGMTString();
+    }
+    else {
+        expires = "";
+    }
+      
+    document.cookie = escape(name) + "=" + 
+        escape(value) + expires + "; path=/";
+}
 
-function openModal(e){    
+function openModal(e){
   let nom=e.target.id;
   console.log(nom);
   const json_data = JSON.stringify({
@@ -69,7 +85,7 @@ function openModal(e){
   document.getElementById('popup').innerHTML ='';    
   document.getElementById('popup').innerHTML += 
 `<form action="envoiModif.php" method="post">
-<h2 class="text-center" style="color:whitesmoke;margin-top:20px">Ajouter un projet</h2>       
+<h2 class="text-center" style="color:whitesmoke;margin-top:20px">Modifier un projet</h2>       
 <div class="form-group">
     <input type="number" name="Numéroduprojet" class="form-control" placeholder="*"  min="1" max="50" autocomplete="off" value="`+ infos[0]['id_Categorie'] +`" required>
 </div>
@@ -121,22 +137,6 @@ function openModal(e){
 
   console.log(infos);
 });}
-
-function createCookie(name,value, days){
-    var expires;
-  
-    if (days) {
-        var date = new Date();
-        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-        expires = "; expires=" + date.toGMTString();
-    }
-    else {
-        expires = "";
-    }
-      
-    document.cookie = escape(name) + "=" + 
-        escape(value) + expires + "; path=/";
-}
 
 function chargementImage(){
     createCookie("fileImage", "image", 10);

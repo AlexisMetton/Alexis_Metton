@@ -34,7 +34,7 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $intitule_saisi = valid_donnees($_POST['Intitulé']);
         $description_saisi = $_POST['Description'];
         $outils_saisi = $_POST['Outils'];
-        $liens_saisi = $_POST['Liens'];
+        $liens_saisi = valid_donnees($_POST['Liens']);
         
         if(isset($_COOKIE['fileImage'])){
             $Image_saisi = valid_donnees($_POST['Imagebis']);
@@ -52,8 +52,8 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $Image2_saisi = valid_donnees($_POST['Image2']);
         }
         
-        $updateRestaurant = $conn->prepare('UPDATE projets SET id_Categorie = ?, nom = ?, image1=?, image2=?, image3=?, intitule=?, description=?, outils=?, liens=? WHERE nom = ?');
-        $updateRestaurant->execute(array($id_Categorie_saisi, $nom_saisi, $Image_saisi, $Image1_saisi, $Image2_saisi, $intitule_saisi, $description_saisi, $outils_saisi, $liens_saisi, $conditionForm));
+        $update = $conn->prepare('UPDATE projets SET id_Categorie = ?, nom = ?, image1=?, image2=?, image3=?, intitule=?, description=?, outils=?, liens=? WHERE nom = ?');
+        $update->execute(array($id_Categorie_saisi, $nom_saisi, $Image_saisi, $Image1_saisi, $Image2_saisi, $intitule_saisi, $description_saisi, $outils_saisi, $liens_saisi, $conditionForm));
         $_SESSION['modif'] = 1;
         header('location: backAcceuil.php');
     }

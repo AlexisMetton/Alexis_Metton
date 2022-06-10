@@ -6,13 +6,13 @@ $pass = "";
 $dbname = "alexis_metton";
 $Num = valid_donnees($_POST['Numéroduprojet']);
 $Nom = valid_donnees($_POST['Nom']);
+$Image = valid_donnees($_POST['Image']);
 $Image1 = valid_donnees($_POST['Image1']);
 $Image2 = valid_donnees($_POST['Image2']);
-$Image3 = valid_donnees($_POST['Image3']);
 $Intitule = valid_donnees($_POST['Intitulé']);
 $Description = valid_donnees($_POST['Description']);
 $Outils = valid_donnees($_POST['Outils']);
-
+$Liens = valid_donnees($_POST['liens']);
 
 function valid_donnees($donnees){
     $donnees = trim($donnees);
@@ -31,8 +31,8 @@ try {
 
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $sth = $conn->prepare ("INSERT INTO projets (id_Categorie, nom, image1, image2, image3, intitule, description, outils)
-                            VALUES ('$Num', '$Nom', '$Image1', '$Image2', '$Image3', '$Intitule','$Description', '$Outils')");
+    $sth = $conn->prepare ("INSERT INTO projets (id_Categorie, nom, image1, image2, image3, intitule, description, outils, liens)
+                            VALUES ('$Num', '$Nom', '$Image', '$Image1', '$Image2', '$Intitule','$Description', '$Outils', '$Liens')");
     $sth->execute();
 
     $_SESSION['ajout'] = 1;

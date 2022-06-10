@@ -10,7 +10,7 @@ $user = "root";
 $pass = "";
 $dbname = "alexis_metton";
 if(isset($_POST['nom'])){
-    $conditionProduits=' WHERE nom = "'.$_POST['nom'].'";';
+    $condition=' WHERE nom = "'.$_POST['nom'].'";';
 }
 
 try{
@@ -25,10 +25,10 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 if(isset($_POST['nom'])){
 $sth = $conn ->prepare("SELECT * 
                         FROM `projets` 
-                        $conditionProduits");
+                        $condition");
 $sth->execute();
-$produits = $sth->fetchAll(PDO::FETCH_ASSOC);
+$projet = $sth->fetchAll(PDO::FETCH_ASSOC);
 
-echo json_encode($produits);
+echo json_encode($projet);
 }
 ?>
