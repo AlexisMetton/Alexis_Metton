@@ -6,18 +6,21 @@
 	border-style: solid;
 	border-color: aliceblue;
 	content: "span •";
-	height: 100px;
-	width: 100px;
+	height: 10%;
+	width: 5%;
 	color: whitesmoke;
 }
 .markItUp .markItUpButton2 a {
 	background-image:url(images/italic.png);
 	border-style: solid;
 	border-color: aliceblue;
-
+	content: "span •";
+	height: 10%;
+	width: 5%;
+	color: whitesmoke;
 }
 .markItUp{
 	border-style: solid;
-	width: 90vh;
+	width: 90%;
 	margin-left: 10%;
 }
