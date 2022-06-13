@@ -54,7 +54,7 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
         
         $update = $conn->prepare('UPDATE projets SET id_Categorie = ?, nom = ?, image1=?, image2=?, image3=?, intitule=?, description=?, outils=?, liens=?, affichage=? WHERE nom = ?');
-        $update->execute(array($id_Categorie_saisi, $nom_saisi, $Image_saisi, $Image1_saisi, $Image2_saisi, $intitule_saisi, $description_saisi, $outils_saisi, $liens_saisi, $affichage_saisi,$conditionForm));
+        $update->execute(array($id_Categorie_saisi, $nom_saisi, $Image_saisi, $Image1_saisi, $Image2_saisi, $intitule_saisi, $description_saisi, $outils_saisi, $liens_saisi, $affichage_saisi, $conditionForm));
         $_SESSION['modif'] = 1;
         header('location: backAcceuil.php');
     }
