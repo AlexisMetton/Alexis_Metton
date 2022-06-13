@@ -25,6 +25,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="formBack.css"/>
     <title>Alexis_Metton/BackOffice</title>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="../bbCode/markitup/jquery.markitup.js"></script>
+    <script type="text/javascript" src="../bbCode/markitup/sets/default/set.js"></script>
+    <link rel="stylesheet" type="text/css" href="../bbCode/markitup/skins/simple/style.css">
+    <script type="text/javascript" src="../bbCode/markitup/sets/default/set.js"></script>
+    <script type="text/javascript">
+        $(function() {
+	        // Add markItUp! to your textarea in one line
+	        // $('textarea').markItUp( { Settings }, { OptionalExtraSettings } );
+	        $('textarea').markItUp(mySettings);
+        });
+    </script>
 </head>
 <body>
 <?php
