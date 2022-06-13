@@ -265,7 +265,8 @@ function openModal(e){
 
   let dataArray = {"idd": idd};
   fetch_post('données.php', dataArray).then(function(response) {
-      let infos = JSON.parse(response);
+     console.log(response); 
+    let infos = JSON.parse(response);
   document.getElementById('overlay').style.opacity = "1";
   document.getElementById('popup').style.opacity = "1";
   document.getElementById('overlay').style.zIndex = "102";

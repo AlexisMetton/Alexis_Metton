@@ -10,6 +10,17 @@ $pass = "";
 $dbname = "alexis_metton";
 $conditionProduits=' WHERE nom = "'.$_POST['idd'].'";';
 
+function bbcodeToHtml($Outils){
+	$Description = "";
+	$conv = array(
+	'\[button\](.*?)\[\/button\]' => '<button>$1</button>'
+	);
+	foreach ($conv as $k=>$v){
+		$Description = preg_replace('/'.$k.'/',$v,$Outils);
+    }
+    return $Description;
+}
+
 try{
     $conn = new PDO("mysql:host=$servname;dbname=$dbname;charset=utf8",$user, $pass);
 }
@@ -23,5 +34,8 @@ $sth = $conn->prepare ("SELECT *
                        $conditionProduits");
 $sth->execute();
 $produits = $sth->fetchAll(PDO::FETCH_ASSOC);
+for($i=0; $i<count($produits); $i++){
+    $produits[$i]["outils"] = bbcodeToHtml($produits[$i]["outils"]);
+}
 echo json_encode($produits);
 ?>
