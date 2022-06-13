@@ -30,7 +30,7 @@
     <script type="text/javascript" src="../bbCode/markitup/jquery.markitup.js"></script>
     <script type="text/javascript" src="../bbCode/markitup/sets/default/set.js"></script>
     <link rel="stylesheet" type="text/css" href="../bbCode/markitup/skins/simple/style.css">
-    <script type="text/javascript" src="../bbCode/markitup/sets/default/set.js"></script>
+    <link rel="stylesheet" type="text/css" href="../bbCode/markitup/sets/default/style.css">
     <script type="text/javascript">
         $(function() {
 	        // Add markItUp! to your textarea in one line

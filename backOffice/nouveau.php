@@ -15,12 +15,14 @@ $Outils = valid_donnees($_POST['Outils']);
 $Liens = valid_donnees($_POST['liens']);
 $Affichage = valid_donnees($_POST['affichage']);
 
+
 function valid_donnees($donnees){
     $donnees = trim($donnees);
     $donnees = stripslashes($donnees);
     $donnees = htmlspecialchars($donnees);
     return $donnees;
 }
+
 try {
     
     if(isset($_SESSION['pseudo'])){  

@@ -29,7 +29,7 @@
 
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-            $sth = $conn->prepare ("SELECT id_Categorie, nom, image1, affichage
+            $sth = $conn->prepare ("SELECT id_Categorie, nom, image1, affichage, description
                                     FROM projets");
             $sth->execute();
 
@@ -38,6 +38,17 @@
         catch (PDOException $e){
             echo "Erreur : " . $e->getMessage();
         }
+    ?>
+    <?php
+        foreach($projet as $projets){
+        $Description = $projets['description'];
+        }
+        $conv = array(
+        '\[button\](.*?)\[\/button\]' => '<button>$1</button>'
+    );
+    foreach ($conv as $k=>$v){
+        $Description = preg_replace('/'.$k.'/',$v,$Description);
+    }
     ?>
     <header>
         <nav>
