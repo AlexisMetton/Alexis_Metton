@@ -28,6 +28,7 @@ nav a {
     margin-left: 10px;
     margin-top: 10px;
     width: 100%;
+    margin-bottom: 10px;
 }
 nav form{
     text-align: right;
@@ -35,7 +36,11 @@ nav form{
     margin-right: 10px;
     width: 100%;
 }
-
+header{
+    position: sticky;
+    top: 0;
+    background-color: rgb(27,27,27);
+}
 /***************************bouton Section1*********************************/
 .portfolio-experiment{
     text-align: center;

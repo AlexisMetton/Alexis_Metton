@@ -14,6 +14,6 @@ var mySettings = {
 	markupSet:  [
 		{name:'Span', key:'S', openWith:'[span]•', closeWith:'[/span]'  },
 		{name:'Br', key:'Br', openWith:'[br]', closeWith:'' },
-		{name:'Button', key:'Btn', openWith:'[button]', closeWith:'[button]' },
+		{name:'Button', key:'Btn', openWith:'[button]', closeWith:'[/button]' },
 	]
 }
