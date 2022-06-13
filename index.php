@@ -39,17 +39,6 @@
             echo "Erreur : " . $e->getMessage();
         }
     ?>
-    <?php
-        foreach($projet as $projets){
-        $Description = $projets['description'];
-        }
-        $conv = array(
-        '\[button\](.*?)\[\/button\]' => '<button>$1</button>'
-    );
-    foreach ($conv as $k=>$v){
-        $Description = preg_replace('/'.$k.'/',$v,$Description);
-    }
-    ?>
     <header>
         <nav>
             <a href="#section_2">PROFIL <img class="rond" src="img/rond.svg" height="10px"></a>
