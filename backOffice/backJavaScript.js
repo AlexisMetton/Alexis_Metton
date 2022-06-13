@@ -126,7 +126,7 @@ function openModal(e){
     <input type="text" name="Liens" class="form-control" placeholder="Liens"  autocomplete="off" value="`+ infos[0]['liens'] +`" required>
 </div>
 <div class="form-group">
-<input type="number" name="affichage" class="form-control" placeholder="0 ou 1" min="0" max="1" autocomplete="off" value="`+ infos[0]['affichage'] +`" required>
+<input type="number" name="affichage" class="form-control" placeholder="0 (cacher) ou 1 (visible)" min="0" max="1" autocomplete="off" value="`+ infos[0]['affichage'] +`" required>
 </div>
 <div class="form-group">
     <section class="portfolio-experiment">
