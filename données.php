@@ -24,7 +24,7 @@ function bbcodeToHtml($Outils){
 function bbcodeToHtml1($Description){
 	$TextD = "";
 	$convD = array(
-    '\[span\]•\[\/span\](.*)' => '<span>•</span>$1<br>'
+    '\[span\]•\[\/span\](.*?)' => '<br><span>•</span>$1'
 	);
 	foreach ($convD as $k=>$v){
         $TextD = preg_replace('/'.$k.'/',$v,$Description);
