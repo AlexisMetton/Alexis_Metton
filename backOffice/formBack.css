@@ -501,9 +501,25 @@ nav form{
     margin-top: 100px;
 }
 #section_3 h1{
+    padding: 5px;
     color: whitesmoke;
     text-decoration: underline 8px rgb(123,102,255);
     text-align: center;
     font-size: 50px;
     margin-top: 10px;
+}
+#section_3 table{
+    border-style: solid;
+    border-color: whitesmoke;
+    width: 80%;
+    max-width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    color: whitesmoke;
+}
+#section_3 th{
+    background-color: whitesmoke;
+    color: black;
 }

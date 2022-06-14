@@ -220,7 +220,50 @@ catch (PDOException $e){
 </div>
 <section id="section_3">
     <h1>Messages Reçus</h1>
+    <?php
+        $servname = "localhost";
+        $user = "root";
+        $pass = "";
+        $dbname = "alexis_metton";
+        $condition= '';
+        $page = '';
     
+        $conn = new PDO("mysql:host=$servname;dbname=$dbname;charset=utf8",$user, $pass);
+    try {
+    $conn = new PDO("mysql:host=$servname;dbname=$dbname",$user, $pass);
+
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $sth = $conn->prepare ("SELECT *
+                            FROM messages");
+    $sth->execute();
+
+    $message = $sth->fetchAll(PDO::FETCH_ASSOC);
+    }
+    catch (PDOException $e){
+    echo "Erreur : " . $e->getMessage();
+    }
+?>   
+        <table>
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Email</th>
+                <th>Message</th>
+            </tr>
+<?php 
+    foreach($message as $messages){
+?>
+    <tr>
+        <td><?php echo $messages['Nom']; ?></td>
+        <td><?php echo $messages['Prenom']; ?></td>
+        <td><?php echo $messages['Email']; ?></td>
+        <td><a>Voir</a>
+    </tr>
+<?php
+}
+?>
+</table>
 </section>
 </body>
 </html>
