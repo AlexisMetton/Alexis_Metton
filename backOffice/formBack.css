@@ -25,6 +25,7 @@ nav{
 @media screen and (max-width:803px){
     nav{
         display: block;
+        padding-left: 10px;
     }
 }
 nav a {
@@ -242,6 +243,11 @@ header{
     color: whitesmoke;
     resize: vertical;
     padding-top: 10px;
+}
+@media screen and (max-width:380px){
+    #popup1 .form-group textarea{
+        width: 197.59px !important;
+    }
 }
 #popup1 h2{
     margin-bottom: 10px;
