@@ -22,6 +22,11 @@ nav{
     display: flex;
     margin-bottom: 20px;
 }
+@media screen and (max-width:803px){
+    nav{
+        display: block;
+    }
+}
 nav a {
     padding: 2rem 7rem;
     text-decoration: none;
@@ -30,7 +35,7 @@ nav a {
     margin-top: 10px;
     width: 100%;
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 10px;
 }
 nav form{
     text-align: right;
