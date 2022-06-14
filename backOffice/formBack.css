@@ -224,7 +224,7 @@ header{
     border-width: 1px;
 }
 #popup1 .form-group textarea{
-    width: 80%;
+    width: 52vw !important;
     border-style: solid;
     border-color: whitesmoke;
     border-radius:5px;

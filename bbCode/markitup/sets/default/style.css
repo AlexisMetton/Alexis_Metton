@@ -3,24 +3,23 @@
 // By Jay Salvat - http://markitup.jaysalvat.com/
 // ------------------------------------------------------------------*/
 .markItUp .markItUpButton1 a {
-	border-style: solid;
-	border-color: aliceblue;
-	content: "span •";
-	height: 10%;
-	width: 5%;
+	background-color: whitesmoke;
+	border-radius: 50%;
 	color: whitesmoke;
+	margin: 5px;
 }
 .markItUp .markItUpButton2 a {
-	background-image:url(images/italic.png);
-	border-style: solid;
-	border-color: aliceblue;
-	content: "span •";
-	height: 10%;
-	width: 5%;
+	background-image:url(images/bold.png);
 	color: whitesmoke;
+	margin: 5px;
 }
 .markItUp{
-	border-style: solid;
-	width: 90%;
 	margin-left: 10%;
+}
+.markItUpContainer {
+    font: 11px Verdana, Arial, Helvetica, sans-serif;
+    display: grid;
+    align-content: space-evenly;
+    justify-items: start;
+    align-items: baseline
 }
