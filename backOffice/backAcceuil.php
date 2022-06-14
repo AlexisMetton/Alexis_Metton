@@ -169,7 +169,7 @@ catch (PDOException $e){
 <form action="nouveau.php" method="post">
                     <h2 class="text-center" style="color:whitesmoke;margin-top:20px">Ajouter un projet</h2>       
                     <div class="form-group">
-                        <input type="number" name="Numéroduprojet" class="form-control" placeholder="*"  min="1" max="50" autocomplete="off" required>
+                        <input type="number" name="Numéroduprojet" class="form-control" placeholder="N° projet"  min="1" max="50" autocomplete="off" required>
                     </div>
                     <div class="form-group">
                         <input type="text" name="Nom" class="form-control" placeholder="Nom"  autocomplete="off" required>

@@ -90,7 +90,7 @@ function openModal(e){
 `<form action="envoiModif.php" method="post">
 <h2 class="text-center" style="color:whitesmoke;margin-top:20px">Modifier un projet</h2>       
 <div class="form-group">
-    <input type="number" name="Numéroduprojet" class="form-control" placeholder="*"  min="1" max="50" autocomplete="off" value="`+ infos[0]['id_Categorie'] +`" required>
+    <input type="number" name="Numéroduprojet" class="form-control" placeholder="N° projet"  min="1" max="50" autocomplete="off" value="`+ infos[0]['id_Categorie'] +`" required>
 </div>
 <div class="form-group">
     <input type="text" name="Nom" class="form-control" placeholder="Nom"  autocomplete="off" value="`+ infos[0]['nom'] +`" required>
