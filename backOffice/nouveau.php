@@ -4,16 +4,16 @@ $servname = "localhost";
 $user = "root";
 $pass = "";
 $dbname = "alexis_metton";
-$Num = valid_donnees($_POST['Numéroduprojet']);
-$Nom = valid_donnees($_POST['Nom']);
-$Image = valid_donnees($_POST['Image']);
-$Image1 = valid_donnees($_POST['Image1']);
-$Image2 = valid_donnees($_POST['Image2']);
-$Intitule = valid_donnees($_POST['Intitulé']);
-$Description = valid_donnees($_POST['Description']);
-$Outils = valid_donnees($_POST['Outils']);
-$Liens = valid_donnees($_POST['liens']);
-$Affichage = valid_donnees($_POST['affichage']);
+$Num = addslashes(valid_donnees($_POST['Numéroduprojet']));
+$Nom = addslashes(valid_donnees($_POST['Nom']));
+$Image = addslashes(valid_donnees($_POST['Image']));
+$Image1 = addslashes(valid_donnees($_POST['Image1']));
+$Image2 = addslashes(valid_donnees($_POST['Image2']));
+$Intitule = addslashes(valid_donnees($_POST['Intitulé']));
+$Description = addslashes(valid_donnees($_POST['Description']));
+$Outils = addslashes(valid_donnees($_POST['Outils']));
+$Liens = addslashes(valid_donnees($_POST['liens']));
+$Affichage = addslashes(valid_donnees($_POST['affichage']));
 
 
 function valid_donnees($donnees){

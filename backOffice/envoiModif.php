@@ -32,8 +32,8 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $id_Categorie_saisi = valid_donnees($_POST['Numéroduprojet']);
         $nom_saisi = valid_donnees($_POST['Nom']);
         $intitule_saisi = valid_donnees($_POST['Intitulé']);
-        $description_saisi = $_POST['Description'];
-        $outils_saisi = $_POST['Outils'];
+        $description_saisi = valid_donnees($_POST['Description']);
+        $outils_saisi = valid_donnees($_POST['Outils']);
         $liens_saisi = valid_donnees($_POST['Liens']);
         $affichage_saisi = valid_donnees($_POST['affichage']);
         
