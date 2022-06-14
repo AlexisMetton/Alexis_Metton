@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="17mm"
+   height="5mm"
+   viewBox="0 0 17 5"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="button.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.3233446"
+     inkscape:cx="94.906285"
+     inkscape:cy="57.460268"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="77.474518"
+       y="-9.0386934"
+       width="74.461617"
+       height="87.374039"
+       id="rect13497" />
+    <rect
+       x="215.20699"
+       y="361.54776"
+       width="344.33118"
+       height="130.84586"
+       id="rect1772" />
+  </defs>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       transform="matrix(0.15759023,0,0,0.1646377,-29.387967,-59.957608)"
+       id="text1770"
+       style="font-style:normal;font-weight:normal;font-size:34.553px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect1772);fill:#f5f5f5;fill-opacity:1;stroke:none"><tspan
+         x="215.20703"
+         y="392.11818"
+         id="tspan14716">Btn</tspan></text>
+    <path
+       style="fill:none;stroke:#f5f5f5;stroke-width:0.603455;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 2.8538343,1.6926551 1.1456288,2.826453 2.9677147,3.8893887"
+       id="path10607" />
+    <path
+       style="fill:none;stroke:#f5f5f5;stroke-width:0.603455;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 14.02539,4.0403285 15.733597,2.9065306 13.91151,1.8435954"
+       id="path10607-8" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-0.52916667,0)"
+       id="text13495"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect13497);fill:#000000;fill-opacity:1;stroke:none" />
+  </g>
+</svg>

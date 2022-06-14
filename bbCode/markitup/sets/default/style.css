@@ -9,9 +9,11 @@
 	margin: 5px;
 }
 .markItUp .markItUpButton2 a {
-	background-image:url(images/bold.png);
+	background-image:url(images/button.svg);
 	color: whitesmoke;
 	margin: 5px;
+	width: 60px;
+	height: 20px;
 }
 .markItUp{
 	margin-left: 10%;
