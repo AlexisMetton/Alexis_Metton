@@ -23,5 +23,5 @@
     display: grid;
     align-content: space-evenly;
     justify-items: start;
-    align-items: baseline
+    align-items: baseline;
 }
