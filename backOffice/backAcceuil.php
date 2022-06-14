@@ -78,11 +78,15 @@ catch (PDOException $e){
 <?php foreach($administrateur as $administrateurs){ ?>
 <header>
     <nav>   
-        <a href="../index.php">
-            <h1 style="font-size:25px"><?php echo $administrateurs['prenomAdmin'] ?>
-            <span><?php echo $administrateurs['nomAdmin'] ?></span>
-            </h1>
-        </a>
+        <div class="main-contain"></div>
+            <div class="div">
+                <div class="flex-1">
+                    <a href="../index.php"><button type="submit" name="logout"class="button btn-1"><h1 style="font-size:25px"><?php echo $administrateurs['prenomAdmin'] ?>
+                    <span><?php echo $administrateurs['nomAdmin'] ?></span>
+                    </h1></button></a>
+                </div>
+            </div>
+        </div>
     <?php 
     } 
     ?>

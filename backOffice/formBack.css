@@ -29,7 +29,6 @@ nav{
     }
 }
 nav a {
-    padding: 2rem 7rem;
     text-decoration: none;
     color: rgb(245, 245, 245);
     margin-left: 10px;
@@ -474,6 +473,7 @@ header{
     background: transparent; 
     border-style: none;
     color: whitesmoke;
+    margin-top: 10px;
 }
 .btn-1:before {
     border-top: .3rem solid rgb(123,102,255);
