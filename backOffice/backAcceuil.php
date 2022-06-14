@@ -87,7 +87,13 @@ catch (PDOException $e){
     } 
     ?>
         <form action="logout.php" method="post">
-            <input type="submit" name="logout" value="Déconnexion" style="cursor:pointer;"/>
+            <div class="main-contain"></div>
+                <div class="div">
+                    <div class="flex-1">
+                        <button type="submit" name="logout"class="button btn-1">Déconnexion</button>
+                    </div>
+                </div>
+            </div>
         </form>           
     </nav>
 </header>
