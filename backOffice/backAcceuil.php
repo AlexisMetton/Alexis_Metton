@@ -258,7 +258,7 @@ catch (PDOException $e){
         <td><?php echo $messages['Nom']; ?></td>
         <td><?php echo $messages['Prenom']; ?></td>
         <td><?php echo $messages['Email']; ?></td>
-        <td><a>Voir</a>
+        <td><a>Voir</a></td>
     </tr>
 <?php
 }
