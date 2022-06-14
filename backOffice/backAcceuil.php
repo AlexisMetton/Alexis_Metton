@@ -218,7 +218,10 @@ catch (PDOException $e){
 <div id="popup">
 
 </div>
-
+<section id="section_3">
+    <h1>Messages Reçus</h1>
+    
+</section>
 </body>
 </html>
 <script src="backJavaScript.js"></script>
