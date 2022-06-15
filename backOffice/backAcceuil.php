@@ -118,7 +118,7 @@ catch (PDOException $e){
             
             try{
                 if(isset($_SESSION['ajout'])){
-                    $ajout = "*Nouveau restaurant bien créé";
+                    $ajout = "*Nouveau projet bien créé";
                     echo "<div id='ajout' style='color: #2a7a1f;
                     text-align: center;
                     margin-bottom: 2px;
@@ -127,12 +127,21 @@ catch (PDOException $e){
                 }
                 
                 if(isset($_SESSION['suppression'])){
-                    $suppression = "*Restaurant bien supprimé";
+                    $suppression = "*Projet bien supprimé";
                     echo "<div id='suppression' style='color: rgb(255, 88, 88);
                     text-align: center;
                     margin-bottom: 2px;
                     font-family: 'Inter-Bold';'>" .$suppression ."</div>";
                     unset($_SESSION['suppression']);
+                }
+
+                if(isset($_SESSION['suppression1'])){
+                    $suppression = "*Message bien supprimé";
+                    echo "<div id='suppression' style='color: rgb(255, 88, 88);
+                    text-align: center;
+                    margin-bottom: 2px;
+                    font-family: 'Inter-Bold';'>" .$suppression ."</div>";
+                    unset($_SESSION['suppression1']);
                 }
 
                 if(isset($_SESSION['modif'])){
@@ -154,7 +163,7 @@ catch (PDOException $e){
                 foreach($projet as $projets){
             ?>
             <div style="margin-left: 5px; margin-right: 5px;">
-            <a onclick="return confirm('Voulez-vous vraiment supprimer ce restaurant ?');" class="croix" style="float:right;margin-right:10px;margin-bottom: 2px" href="supprimer.php?nom=<?php echo $projets['nom']; ?>">
+            <a onclick="return confirm('Voulez-vous vraiment supprimer ce projet ?');" class="croix" style="float:right;margin-right:10px;margin-bottom: 2px" href="supprimer.php?nom=<?php echo $projets['nom']; ?>">
                 <button style="color:whitesmoke; background-color:transparent; border-color:whitesmoke;padding:5px;border-radius:5px;cursor:pointer;">&times;</button>
             </a>
                 <div class="projet" id="projet">
@@ -235,7 +244,8 @@ catch (PDOException $e){
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     $sth = $conn->prepare ("SELECT *
-                            FROM messages");
+                            FROM messages
+                            ORDER BY id DESC;");
     $sth->execute();
 
     $message = $sth->fetchAll(PDO::FETCH_ASSOC);
@@ -246,6 +256,7 @@ catch (PDOException $e){
 ?>   
         <table>
             <tr>
+                <th>Supp</th>
                 <th>Nom</th>
                 <th>Prénom</th>
                 <th>Email</th>
@@ -255,12 +266,13 @@ catch (PDOException $e){
     foreach($message as $messages){
 ?>
     <tr>
+        <td><a onclick="return confirm('Voulez-vous vraiment supprimer ce message ?');" href="suppMessage.php?id=<?php echo $messages['id']; ?>"><img id="<?php echo $messages['id']; ?>" src="../img/corbeille.png" height="25px">
         <td><?php echo $messages['Nom']; ?></td>
         <td><?php echo $messages['Prenom']; ?></td>
         <td><?php echo $messages['Email']; ?></td>
         <?php
         if(isset($_COOKIE['fileMess'.$messages['id']])){?>
-            <td class="voir" style="background-color:rgb(27,27,27);"><div class="message" id="<?php echo $messages['id']; ?>" onclick="voir1(event)">Voir</div></td><?php
+            <td class="voir" id="ouvert<?php echo $messages['id']?>" style="background-color:rgb(27,27,27);"><div class="message" id="<?php echo $messages['id']; ?>" onclick="voir(event)">Voir</div></td><?php
         }else{?>
             <td class="voir" id="ouvert<?php echo $messages['id']?>" style="background-color:rgb(123,102,255);"><div class="message" id="<?php echo $messages['id']; ?>" onclick="voir(event)">Voir</div></td><?php
         }

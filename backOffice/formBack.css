@@ -529,7 +529,10 @@ nav form{
 #section_3 .message:hover{
     text-decoration: underline;
 }
-/*************************Popup 2***********************************/
+#section_3 td img{
+    cursor: pointer;
+}
+/******************************Popup 2***********************************/
 #popup2{
     top: 0;
     left: 17%;
