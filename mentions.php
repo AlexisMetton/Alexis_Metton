@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav>
-        <a href="index.php"><img src=img/logo.svg height="50px" style="padding-top:15px;transform:scale(1.9);margin-bottom: 10px;;width: 100%;"></a>
+        <a href="index.php"><img src=img/logo.svg height="50px" style="padding-top:15px;transform:scale(1.9);margin-bottom: 10px;;width: 100%;position:sticky;top:0;"></a>
     </nav>
     <h1>MENTIONS LÉGALES</h1>
     <p>
@@ -47,7 +47,7 @@
         <br>— Alexis Metton est identiquement propriétaire des « droits des producteurs de bases de données » visés au Livre III, Titre IV, du Code de la Propriété Intellectuelle (loi n° 98-536 du 1er juillet 1998) relative aux droits d’auteur et aux bases de données.
         <br>— Par ailleurs, la mise en forme de ce site a nécessité le recours à des sources externes dont Alexis Metton a acquis les droits ou dont les droits d’utilisation sont ouverts.
         <br>— Hébergeur : OVH, OnlineFormaPro.
-        <br>— Design et création du site internet : Alexis Metton et Morgane Fleury.
+        <br>— Design et création du site internet : Alexis Metton.
         <br>— Conditions de service : ce site est proposé en langages HTML5 et CSS3, pour un meilleur confort d’utilisation et un graphisme plus agréable, nous vous recommandons de recourir à des navigateurs modernes comme Safari, Firefox, Chrome, …
     </p>
     <h2>7. Cookies</h2>
