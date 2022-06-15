@@ -199,6 +199,8 @@ function chargementLiens2(){
 
 
 function voir(e){
+    createCookie("fileMess", "mess", 10^100000);
+
     let mess=e.target.id;
     console.log(mess);
     const json_data = JSON.stringify({

@@ -521,10 +521,7 @@ nav form{
 }
 #section_3 th{
     background-color: whitesmoke;
-    color: black;
-}
-#section_3 .voir{
-    background-color: rgb(123,102,255);
+    color: rgb(0, 0, 0);
 }
 #section_3 .message{
     cursor: pointer;
