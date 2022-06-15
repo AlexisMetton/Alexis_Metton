@@ -9,6 +9,10 @@ function closeAvecOverlay(){
     document.getElementById('popup').style.opacity = "0";
     document.getElementById('popup').style.zIndex = "-2";
     document.getElementById('popup').style.transition = "500ms";
+
+    document.getElementById('popup2').style.opacity = "0";
+    document.getElementById('popup2').style.zIndex = "-2";
+    document.getElementById('popup2').style.transition = "500ms";
 }
 
 function popupNouveau(){
@@ -189,4 +193,35 @@ function chargementLiens2(){
     document.getElementById('ImagesChargement2').style.display = "none";
     document.getElementById('FileLi2').style.display = "none";
     document.getElementById('FileIm2').style.display = "block";
+}
+
+
+
+
+function voir(e){
+    let mess=e.target.id;
+    console.log(mess);
+    const json_data = JSON.stringify({
+    mess
+    })
+    console.log(json_data);
+  
+    let dataArray = {"mess": mess};
+    document.getElementById('overlay').style.opacity = "1";
+    document.getElementById('popup2').style.opacity = "1";
+    document.getElementById('overlay').style.zIndex = "102";
+    document.getElementById('popup2').style.zIndex = "110";
+    document.getElementById('overlay').style.transition = "500ms";
+    document.getElementById('popup2').style.transition = "500ms"; 
+
+    fetch_post('message.php', dataArray).then(function(response) {
+        let message = JSON.parse(response);
+
+        document.getElementById('popup2').innerHTML ='';    
+        document.getElementById('popup2').innerHTML += 
+      `<h1>`+ message[0]['Nom'] +` `+ message[0]['Prenom'] +`</h1>
+      <h2>`+ message[0]['Email'] +`</h2>
+      <p>`+ message[0]['Message'] +`<p>
+      `
+    });
 }

@@ -276,7 +276,7 @@ nav form{
     font-size: 20px;
     cursor:pointer;
 }
-#popup1 form{
+#popup form{
     text-align: center;
 }
 #popup .form-group{
@@ -522,4 +522,46 @@ nav form{
 #section_3 th{
     background-color: whitesmoke;
     color: black;
+}
+#section_3 .voir{
+    background-color: rgb(123,102,255);
+}
+#section_3 .message{
+    cursor: pointer;
+}
+#section_3 .message:hover{
+    text-decoration: underline;
+}
+/*************************Popup 2***********************************/
+#popup2{
+    top: 0;
+    left: 17%;
+    margin: 10vh auto;
+    position: fixed;
+    width:65%;
+    background-color: rgba(27, 27, 27, 0.800);
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px 10px rgba(245, 245, 245, 0.24);
+    z-index: -2;
+    opacity: 0;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    max-height: 80%;
+    text-align: center;
+    /*display: none;*/
+}
+::-webkit-scrollbar {
+    display: none;
+}
+#popup2 h1{
+    color: whitesmoke;
+    margin-bottom: 5px;
+}
+#popup2 h2{
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+#popup2 p{
+    color: whitesmoke;
+    margin-bottom: 10px;
 }

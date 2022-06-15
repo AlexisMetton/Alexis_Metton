@@ -258,13 +258,16 @@ catch (PDOException $e){
         <td><?php echo $messages['Nom']; ?></td>
         <td><?php echo $messages['Prenom']; ?></td>
         <td><?php echo $messages['Email']; ?></td>
-        <td><a>Voir</a></td>
+        <td class="voir"><div class="message" id="<?php echo $messages['id']; ?>" onclick="voir(event)">Voir</div></td>
     </tr>
 <?php
 }
 ?>
 </table>
 </section>
+<div id="popup2">
+
+</div>
 </body>
 </html>
 <script src="backJavaScript.js"></script>
