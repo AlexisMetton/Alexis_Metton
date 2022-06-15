@@ -233,7 +233,7 @@
             <div id="logofooter">
                 <a href=""><img src=img/logo.svg height="100px" style="padding-top:5px;"></a>
                 <!--<a href="#"><p><span class="A">A</span><span class="M">M</span></p></a><br><br>-->
-                <a href="mentions.html" target="_blank">entions légales</a>
+                <a href="mentions.php" target="_blank">entions légales</a>
             </div>
             <div id="reseaux">
                 <h3>Pour en savoir plus...</h3>

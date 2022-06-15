@@ -9,6 +9,9 @@
     <title>Alexis Metton - Mentions Légales</title>
 </head>
 <body>
+    <nav>
+        <a href="index.php"><img src=img/logo.svg height="50px" style="padding-top:15px;transform:scale(1.9);margin-bottom: 10px;;width: 100%;"></a>
+    </nav>
     <h1>MENTIONS LÉGALES</h1>
     <p>
         Merci de lire attentivement les modalités d’utilisation du présent site avant de le parcourir. 
