@@ -259,10 +259,10 @@ catch (PDOException $e){
         <td><?php echo $messages['Prenom']; ?></td>
         <td><?php echo $messages['Email']; ?></td>
         <?php
-        if(isset($_COOKIE['fileMess'])){?>
-            <td class="voir" style="background-color:rgb(27,27,27);"><div class="message" id="<?php echo $messages['id']; ?>" onclick="voir(event)">Voir</div></td><?php
+        if(isset($_COOKIE['fileMess'.$messages['id']])){?>
+            <td class="voir" style="background-color:rgb(27,27,27);"><div class="message" id="<?php echo $messages['id']; ?>" onclick="voir1(event)">Voir</div></td><?php
         }else{?>
-            <td class="voir" style="background-color:rgb(123,102,255);"><div class="message" id="<?php echo $messages['id']; ?>" onclick="voir(event)">Voir</div></td><?php
+            <td class="voir" id="ouvert<?php echo $messages['id']?>" style="background-color:rgb(123,102,255);"><div class="message" id="<?php echo $messages['id']; ?>" onclick="voir(event)">Voir</div></td><?php
         }
         ?>
     </tr>

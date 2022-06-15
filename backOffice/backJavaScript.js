@@ -199,15 +199,13 @@ function chargementLiens2(){
 
 
 function voir(e){
-    createCookie("fileMess", "mess", 10^100000);
-
     let mess=e.target.id;
     console.log(mess);
     const json_data = JSON.stringify({
     mess
     })
     console.log(json_data);
-  
+    createCookie('fileMess'+mess, "mess", 10^10000000);
     let dataArray = {"mess": mess};
     document.getElementById('overlay').style.opacity = "1";
     document.getElementById('popup2').style.opacity = "1";
@@ -215,15 +213,46 @@ function voir(e){
     document.getElementById('popup2').style.zIndex = "110";
     document.getElementById('overlay').style.transition = "500ms";
     document.getElementById('popup2').style.transition = "500ms"; 
+    document.getElementById('ouvert'+mess).style.backgroundColor = "rgb(27,27,27)";
 
     fetch_post('message.php', dataArray).then(function(response) {
-        let message = JSON.parse(response);
+    let message = JSON.parse(response);
 
-        document.getElementById('popup2').innerHTML ='';    
-        document.getElementById('popup2').innerHTML += 
-      `<h1>`+ message[0]['Nom'] +` `+ message[0]['Prenom'] +`</h1>
-      <h2>`+ message[0]['Email'] +`</h2>
-      <p>`+ message[0]['Message'] +`<p>
-      `
+    document.getElementById('popup2').innerHTML ='';    
+    document.getElementById('popup2').innerHTML += 
+    `<h1>`+ message[0]['Nom'] +` `+ message[0]['Prenom'] +`</h1>
+    <h2>`+ message[0]['Email'] +`</h2>
+    <p>`+ message[0]['Message'] +`<p>
+    `
     });
+
+}
+
+function voir1(e){
+    let mess=e.target.id;
+    console.log(mess);
+    const json_data = JSON.stringify({
+    mess
+    })
+    console.log(json_data);
+    let dataArray = {"mess": mess};
+    document.getElementById('overlay').style.opacity = "1";
+    document.getElementById('popup2').style.opacity = "1";
+    document.getElementById('overlay').style.zIndex = "102";
+    document.getElementById('popup2').style.zIndex = "110";
+    document.getElementById('overlay').style.transition = "500ms";
+    document.getElementById('popup2').style.transition = "500ms"; 
+    document.getElementById('ouvert').style.backgroundColor = "rgb(27,27,27)";
+
+    fetch_post('message.php', dataArray).then(function(response) {
+    let message = JSON.parse(response);
+
+    document.getElementById('popup2').innerHTML ='';    
+    document.getElementById('popup2').innerHTML += 
+    `<h1>`+ message[0]['Nom'] +` `+ message[0]['Prenom'] +`</h1>
+    <h2>`+ message[0]['Email'] +`</h2>
+    <p>`+ message[0]['Message'] +`<p>
+    `
+    });
+
 }
