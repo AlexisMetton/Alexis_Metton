@@ -16,11 +16,13 @@ if(isset($_POST['mess'])){
 try{
 
     $conn = new PDO("mysql:host=$servname;dbname=$dbname;charset=utf8",$user, $pass);
+    $conn1 = new PDO("mysql:host=$servname;dbname=$dbname;charset=utf8",$user, $pass);
 }
 catch (PDOException $e){
     echo "Erreur : " . $e->getMessage();
 }
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$conn1->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 if(isset($_POST['mess'])){
 $sth = $conn ->prepare("SELECT * 
@@ -30,5 +32,11 @@ $sth->execute();
 $projet = $sth->fetchAll(PDO::FETCH_ASSOC);
 
 echo json_encode($projet);
+}
+if(isset($_POST['mess'])){
+$update = $conn1->prepare("UPDATE messages 
+SET ouvert = '1' 
+$condition");
+$update->execute();
 }
 ?>

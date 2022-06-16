@@ -205,7 +205,6 @@ function voir(e){
     mess
     })
     console.log(json_data);
-    createCookie('fileMess'+mess, "mess", 10^10000000);
     let dataArray = {"mess": mess};
     document.getElementById('overlay').style.opacity = "1";
     document.getElementById('popup2').style.opacity = "1";

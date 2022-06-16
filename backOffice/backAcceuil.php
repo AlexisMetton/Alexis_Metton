@@ -271,7 +271,7 @@ catch (PDOException $e){
         <td><?php echo $messages['Prenom']; ?></td>
         <td><?php echo $messages['Email']; ?></td>
         <?php
-        if(isset($_COOKIE['fileMess'.$messages['id']])){?>
+        if($messages['ouvert'] == "1"){?>
             <td class="voir" id="ouvert<?php echo $messages['id']?>" style="background-color:rgb(27,27,27);"><div class="message" id="<?php echo $messages['id']; ?>" onclick="voir(event)">Voir</div></td><?php
         }else{?>
             <td class="voir" id="ouvert<?php echo $messages['id']?>" style="background-color:rgb(123,102,255);"><div class="message" id="<?php echo $messages['id']; ?>" onclick="voir(event)">Voir</div></td><?php
